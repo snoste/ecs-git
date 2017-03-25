@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.17)  25 MAR 2017 15:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.17)  25 MAR 2017 16:13
 entering extended mode
 **main.tex
 (C:\Users\snorr\Documents\GitHub\ecs-git\report\main.tex
@@ -1133,7 +1133,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  31481 strings out of 493921
  709868 string characters out of 3144876
- 1204746 words of memory out of 3000000
+ 1204803 words of memory out of 3000000
  34248 multiletter control sequences out of 15000+200000
  12715 words of font info for 49 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -1146,7 +1146,7 @@ gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on main.pdf (6 pages, 117326 bytes).
+Output written on main.pdf (6 pages, 118188 bytes).
 PDF statistics:
  214 PDF objects out of 1000 (max. 8388607)
  36 named destinations out of 1000 (max. 500000)
