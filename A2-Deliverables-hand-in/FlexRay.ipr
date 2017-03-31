@@ -2,16 +2,16 @@
 <cs2:chronsimproject xmlns:cs2="http://www.inchron.com/inchron-2.8.0.xsd" xsi:schemaLocation="http://www.inchron.com/inchron-2.8.0.xsd" version="2.0" uuid="{9deff3d9-decb-430a-bfa8-663a87b62989}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
    <general>
       <dir>C:\Users\s168877</dir>
-      <sourceipr>C:\Users\snorr\Documents\GitHub\ecs-git\A2-Deliverables-hand-in\pu123.ipr</sourceipr>
+      <sourceipr>C:\Users\snorr\Documents\GitHub\ecs-git\A2-Deliverables-hand-in\CAN-correct-analyse.ipr</sourceipr>
       <savedir>C:\Users\snorr\Documents\GitHub\ecs-git\A2-Deliverables-hand-in</savedir>
       <name>PU12</name>
       <version></version>
       <description>
          <comment></comment>
          <creation>2017-03-25T14:45:24</creation>
-         <modification>2017-03-31T12:17:38</modification>
+         <modification>2017-03-31T13:30:08</modification>
       </description>
-      <last-modified>2017-03-31T14:19:43</last-modified>
+      <last-modified>2017-03-31T15:46:38</last-modified>
       <author></author>
       <email></email>
       <creator build="20170201A" version="2.8.0" />
@@ -51,7 +51,7 @@
                            <creation>2017-03-25T15:02:30</creation>
                            <modification>2017-03-25T15:02:30</modification>
                         </description>
-                        <simulationreplacement loadtype="Bcet" mean="0 us" sigma="1.5 ms" />
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="1.5 ms" />
                      </instance>
                   </process>
                   <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="T2" preemptable="1" resource="" stack_limit="1024" init="0" >
@@ -61,7 +61,7 @@
                            <creation>2017-03-25T14:49:26</creation>
                            <modification>2017-03-25T14:49:26</modification>
                         </description>
-                        <simulationreplacement loadtype="Bcet" mean="0 us" sigma="1 ms" />
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="1 ms" />
                      </instance>
                   </process>
                   <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="T1" preemptable="1" resource="" stack_limit="1024" init="0" >
@@ -71,7 +71,7 @@
                            <creation>2017-03-25T15:08:27</creation>
                            <modification>2017-03-25T15:08:27</modification>
                         </description>
-                        <simulationreplacement loadtype="Bcet" mean="0 us" sigma="1 ms" />
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="1 ms" />
                      </instance>
                   </process>
                   <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="Ts" preemptable="1" resource="" stack_limit="1024" init="0" >
@@ -81,7 +81,7 @@
                            <creation>2017-03-25T14:47:28</creation>
                            <modification>2017-03-25T14:47:28</modification>
                         </description>
-                        <simulationreplacement loadtype="Bcet" mean="0 us" sigma="50 us" />
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="50 us" />
                      </instance>
                   </process>
                </scheduler>
@@ -92,7 +92,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-25T14:46:38</creation>
-               <modification>2017-03-31T12:11:59</modification>
+               <modification>2017-03-31T13:18:47</modification>
                <targetcpu></targetcpu>
             </description>
             <ipcobjects/>
@@ -113,7 +113,7 @@
                      <creation>2017-03-25T15:43:05</creation>
                      <modification>2017-03-25T15:43:05</modification>
                   </description>
-                  <busmessage offset="0 us" cycle="0 us" size="0" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" format="Standard" propagatedPriorities="false" order="0" coreaffinity="0" priority="0" id="0" jitter="0 us" wcet="220 us" uuid="{8a594f2c-b82b-4a2e-9444-222b282d629a}" name="M1" allowed_types="4294967295" timeslice="10 ms" slot="0 us" bcet="188 us" >
+                  <busmessage offset="0 us" cycle="0 us" size="8" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" format="Standard" propagatedPriorities="false" order="0" coreaffinity="0" priority="0" id="0" jitter="0 us" wcet="999.999945 us" uuid="{8a594f2c-b82b-4a2e-9444-222b282d629a}" name="M1" allowed_types="4294967295" timeslice="10 ms" slot="0 us" bcet="822.222177 us" >
                      <description>
                         <comment></comment>
                         <creation>2017-03-26T10:24:22</creation>
@@ -124,7 +124,7 @@
                         <event type="4" >stop</event>
                      </events>
                   </busmessage>
-                  <busmessage offset="0 us" cycle="0 us" size="0" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" format="Standard" propagatedPriorities="false" order="0" coreaffinity="0" priority="0" id="0" jitter="0 us" wcet="220 us" uuid="{32298307-387d-4f12-a714-9823e4d573c4}" name="M3" allowed_types="4294967295" timeslice="10 ms" slot="0 us" bcet="188 us" >
+                  <busmessage offset="0 us" cycle="0 us" size="8" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" format="Standard" propagatedPriorities="false" order="0" coreaffinity="0" priority="0" id="1" jitter="0 us" wcet="999.999945 us" uuid="{32298307-387d-4f12-a714-9823e4d573c4}" name="M3" allowed_types="4294967295" timeslice="10 ms" slot="0 us" bcet="822.222177 us" >
                      <description>
                         <comment></comment>
                         <creation>2017-03-26T10:34:03</creation>
@@ -135,7 +135,7 @@
                         <event type="4" >stop</event>
                      </events>
                   </busmessage>
-                  <busmessage offset="0 us" cycle="0 us" size="0" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" format="Standard" propagatedPriorities="false" order="0" coreaffinity="0" priority="0" id="0" jitter="0 us" wcet="220 us" uuid="{074b2ccf-666c-46d1-9e1f-37bcb3fb7740}" name="Ms" allowed_types="4294967295" timeslice="10 ms" slot="0 us" bcet="188 us" >
+                  <busmessage offset="0 us" cycle="0 us" size="8" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" format="Standard" propagatedPriorities="false" order="0" coreaffinity="0" priority="0" id="2" jitter="0 us" wcet="999.999945 us" uuid="{074b2ccf-666c-46d1-9e1f-37bcb3fb7740}" name="Ms" allowed_types="4294967295" timeslice="10 ms" slot="0 us" bcet="822.222177 us" >
                      <description>
                         <comment></comment>
                         <creation>2017-03-26T10:08:47</creation>
@@ -187,44 +187,44 @@
                      <creation>2017-03-25T15:20:37</creation>
                      <modification>2017-03-25T15:20:37</modification>
                   </description>
-                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="T7" preemptable="1" resource="" stack_limit="1024" init="0" >
-                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="1" extendedtask="0" jitter="0 us" wcet="3 ms" uuid="{f3ffc78b-52da-41f9-b2cc-637680ec9638}" name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T7" slot="0 us" bcet="3 ms" >
-                        <description>
-                           <comment></comment>
-                           <creation>2017-03-25T15:18:34</creation>
-                           <modification>2017-03-25T15:18:34</modification>
-                        </description>
-                        <simulationreplacement loadtype="Bcet" mean="0 us" sigma="1.5 ms" />
-                     </instance>
-                  </process>
-                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="T5" preemptable="1" resource="" stack_limit="1024" init="0" >
-                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="2" extendedtask="0" jitter="0 us" wcet="1 ms" uuid="{4ce727ac-f228-4aeb-a1a3-70799634dfed}" name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T5" slot="0 us" bcet="1 ms" >
-                        <description>
-                           <comment></comment>
-                           <creation>2017-03-25T15:18:31</creation>
-                           <modification>2017-03-25T15:18:31</modification>
-                        </description>
-                        <simulationreplacement loadtype="Bcet" mean="0 us" sigma="500 us" />
-                     </instance>
-                  </process>
                   <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="T6" preemptable="1" resource="" stack_limit="1024" init="0" >
-                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="3" extendedtask="0" jitter="0 us" wcet="3 ms" uuid="{b7a0571b-d18a-4d7b-a655-55e86527ba57}" name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T6" slot="0 us" bcet="3 ms" >
+                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="1" extendedtask="0" jitter="0 us" wcet="3 ms" uuid="{b7a0571b-d18a-4d7b-a655-55e86527ba57}" name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T6" slot="0 us" bcet="3 ms" >
                         <description>
                            <comment></comment>
                            <creation>2017-03-25T15:18:22</creation>
                            <modification>2017-03-25T15:18:22</modification>
                         </description>
-                        <simulationreplacement loadtype="Bcet" mean="0 us" sigma="1.5 ms" />
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="1.5 ms" />
+                     </instance>
+                  </process>
+                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="T7" preemptable="1" resource="" stack_limit="1024" init="0" >
+                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="2" extendedtask="0" jitter="0 us" wcet="3 ms" uuid="{f3ffc78b-52da-41f9-b2cc-637680ec9638}" name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T7" slot="0 us" bcet="3 ms" >
+                        <description>
+                           <comment></comment>
+                           <creation>2017-03-25T15:18:34</creation>
+                           <modification>2017-03-25T15:18:34</modification>
+                        </description>
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="1.5 ms" />
                      </instance>
                   </process>
                   <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="T8" preemptable="1" resource="" stack_limit="1024" init="0" >
-                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="4" extendedtask="0" jitter="0 us" wcet="2 ms" uuid="{842d8e2c-ecc1-49d3-a2fc-296f8b6f2c13}" name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T8" slot="0 us" bcet="2 ms" >
+                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="3" extendedtask="0" jitter="0 us" wcet="2 ms" uuid="{842d8e2c-ecc1-49d3-a2fc-296f8b6f2c13}" name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T8" slot="0 us" bcet="2 ms" >
                         <description>
                            <comment></comment>
                            <creation>2017-03-25T15:18:28</creation>
                            <modification>2017-03-25T15:18:28</modification>
                         </description>
-                        <simulationreplacement loadtype="Bcet" mean="0 us" sigma="1.5 ms" />
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="1.5 ms" />
+                     </instance>
+                  </process>
+                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="T5" preemptable="1" resource="" stack_limit="1024" init="0" >
+                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="4" extendedtask="0" jitter="0 us" wcet="1 ms" uuid="{4ce727ac-f228-4aeb-a1a3-70799634dfed}" name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T5" slot="0 us" bcet="1 ms" >
+                        <description>
+                           <comment></comment>
+                           <creation>2017-03-25T15:18:31</creation>
+                           <modification>2017-03-25T15:18:31</modification>
+                        </description>
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="500 us" />
                      </instance>
                   </process>
                </scheduler>
@@ -235,7 +235,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-25T15:17:57</creation>
-               <modification>2017-03-31T12:11:59</modification>
+               <modification>2017-03-31T13:18:47</modification>
                <targetcpu></targetcpu>
             </description>
             <ipcobjects/>
@@ -256,7 +256,7 @@
                      <creation>2017-03-26T10:31:32</creation>
                      <modification>2017-03-26T10:31:32</modification>
                   </description>
-                  <busmessage offset="0 us" cycle="0 us" size="0" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" format="Standard" propagatedPriorities="false" order="0" coreaffinity="0" priority="6291456" id="3" jitter="0 us" wcet="220 us" uuid="{deefa316-7d73-411b-a31c-7c2f481f3900}" name="M8" allowed_types="4294967295" timeslice="10 ms" slot="0 us" bcet="188 us" >
+                  <busmessage offset="0 us" cycle="0 us" size="8" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" format="Standard" propagatedPriorities="false" order="0" coreaffinity="0" priority="6291456" id="3" jitter="0 us" wcet="999.999945 us" uuid="{deefa316-7d73-411b-a31c-7c2f481f3900}" name="M8" allowed_types="4294967295" timeslice="10 ms" slot="0 us" bcet="822.222177 us" >
                      <description>
                         <comment></comment>
                         <creation>2017-03-26T10:37:13</creation>
@@ -321,7 +321,7 @@
                            <creation>2017-03-26T09:59:49</creation>
                            <modification>2017-03-26T09:59:49</modification>
                         </description>
-                        <simulationreplacement loadtype="Bcet" mean="0 us" sigma="0 us" />
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="0 us" />
                      </instance>
                   </process>
                   <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="S4" preemptable="1" resource="" stack_limit="1024" init="0" >
@@ -331,7 +331,7 @@
                            <creation>2017-03-26T10:04:18</creation>
                            <modification>2017-03-26T10:04:18</modification>
                         </description>
-                        <simulationreplacement loadtype="Bcet" mean="0 us" sigma="0 us" />
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="0 us" />
                      </instance>
                   </process>
                   <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="T4" preemptable="1" resource="" stack_limit="1024" init="0" >
@@ -341,7 +341,7 @@
                            <creation>2017-03-26T10:03:46</creation>
                            <modification>2017-03-26T10:03:46</modification>
                         </description>
-                        <simulationreplacement loadtype="Bcet" mean="0 us" sigma="500 us" />
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="500 us" />
                      </instance>
                   </process>
                   <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="Tca" preemptable="1" resource="" stack_limit="1024" init="0" >
@@ -351,7 +351,7 @@
                            <creation>2017-03-26T10:03:28</creation>
                            <modification>2017-03-26T10:03:28</modification>
                         </description>
-                        <simulationreplacement loadtype="Bcet" mean="0 us" sigma="1 ms" />
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="1 ms" />
                      </instance>
                   </process>
                </scheduler>
@@ -362,7 +362,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-26T09:59:17</creation>
-               <modification>2017-03-31T12:11:59</modification>
+               <modification>2017-03-31T13:18:47</modification>
                <targetcpu></targetcpu>
             </description>
             <ipcobjects/>
@@ -407,7 +407,7 @@
             </specsettings>
          </instance>
       </resourcetype>
-      <peripheral speed="250000" base="0x0" fabric="10" logEnabled="false" uuid="{935b66e7-fbdc-4a64-8507-cd6a37ce53fd}" name="c1" >
+      <peripheral speed="135000" base="0x0" fabric="10" logEnabled="false" uuid="{935b66e7-fbdc-4a64-8507-cd6a37ce53fd}" name="c1" >
          <description>
             <comment></comment>
             <creation>2017-03-25T15:58:05</creation>
@@ -434,19 +434,19 @@
          <target>|P:PU12|RI:PU1</target>
       </map>
       <map>
-         <source>|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T7</source>
-         <target>|P:PU12|RI:PU2</target>
-      </map>
-      <map>
-         <source>|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T5</source>
-         <target>|P:PU12|RI:PU2</target>
-      </map>
-      <map>
          <source>|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T6</source>
          <target>|P:PU12|RI:PU2</target>
       </map>
       <map>
+         <source>|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T7</source>
+         <target>|P:PU12|RI:PU2</target>
+      </map>
+      <map>
          <source>|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T8</source>
+         <target>|P:PU12|RI:PU2</target>
+      </map>
+      <map>
+         <source>|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T5</source>
          <target>|P:PU12|RI:PU2</target>
       </map>
       <map>
@@ -491,7 +491,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-25T15:10:20</creation>
-               <modification>2017-03-31T12:11:59</modification>
+               <modification>2017-03-31T13:18:47</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -503,7 +503,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-25T15:01:54</creation>
-               <modification>2017-03-31T12:11:59</modification>
+               <modification>2017-03-31T13:18:47</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -515,7 +515,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-25T15:10:37</creation>
-               <modification>2017-03-31T12:11:59</modification>
+               <modification>2017-03-31T13:18:47</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -527,7 +527,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-25T15:01:23</creation>
-               <modification>2017-03-31T12:11:59</modification>
+               <modification>2017-03-31T13:18:47</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -547,7 +547,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-25T15:24:13</creation>
-               <modification>2017-03-31T12:11:59</modification>
+               <modification>2017-03-31T13:18:47</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -559,7 +559,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-25T15:24:38</creation>
-               <modification>2017-03-31T12:11:59</modification>
+               <modification>2017-03-31T13:18:47</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -571,7 +571,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-25T15:25:02</creation>
-               <modification>2017-03-31T12:11:59</modification>
+               <modification>2017-03-31T13:18:47</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -583,7 +583,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-25T15:25:28</creation>
-               <modification>2017-03-31T12:11:59</modification>
+               <modification>2017-03-31T13:18:47</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -603,7 +603,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-26T10:05:45</creation>
-               <modification>2017-03-31T12:11:59</modification>
+               <modification>2017-03-31T13:18:47</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -615,7 +615,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-26T10:06:16</creation>
-               <modification>2017-03-31T12:11:59</modification>
+               <modification>2017-03-31T13:18:47</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -635,7 +635,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-26T10:35:13</creation>
-               <modification>2017-03-31T12:11:59</modification>
+               <modification>2017-03-31T13:18:47</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -647,7 +647,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-26T10:35:47</creation>
-               <modification>2017-03-31T12:11:59</modification>
+               <modification>2017-03-31T13:18:47</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -659,7 +659,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-26T10:37:48</creation>
-               <modification>2017-03-31T12:11:59</modification>
+               <modification>2017-03-31T13:18:47</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -671,7 +671,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-26T10:36:15</creation>
-               <modification>2017-03-31T12:11:59</modification>
+               <modification>2017-03-31T13:18:47</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -716,27 +716,21 @@
             <instance id="11" color="0xff6ec808" />
          </instancecolors>
          <steps>
-            <step node="|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:Ts" joins="false" id="0" streamed="false" >
-               <output outid="1" name="conn_Ts_Ms_0" />
-            </step>
-            <step node="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:Ms" joins="false" id="1" streamed="false" >
-               <output outid="2" name="conn_Ms_Tca_0" />
-            </step>
-            <step node="|P:PU12|RI:PU3|SI:ISRScheduler|SI:DefaultScheduler|SI:Tca" joins="false" id="2" streamed="false" />
+            <step node="|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:Ts" joins="false" id="0" streamed="false" />
          </steps>
       </eventchain>
       <requirement instA="1" warnmargin="0 us" instB="0" warnmarginrel="true" bound="]-infty, 5 ms]" from="-1" type="event_chain" to="-1" chain="EventChain" uuid="{306ba9df-a6e7-4339-a903-584720966f73}" name="event_chain" match="0" visible="true" enabled="true" >
          <description>
             <comment></comment>
             <creation>2017-03-31T12:17:38</creation>
-            <modification>2017-03-31T12:19:38</modification>
+            <modification>2017-03-31T13:18:47</modification>
          </description>
       </requirement>
    </requirements>
    <dependencygraph>
       <dependency name="conn_T1_M1" >
          <node name="|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:T1" />
-         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="activation" name="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:M1" orderindex="0" flowtype="event" >
+         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="dataflow" name="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:M1" orderindex="0" flowtype="event" >
             <delay bestcase="0 us" worstcase="0 us" >
                <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
             </delay>
@@ -744,7 +738,7 @@
       </dependency>
       <dependency name="conn_T3_M3" >
          <node name="|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:T3" />
-         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="activation" name="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:M3" orderindex="0" flowtype="event" >
+         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="dataflow" name="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:M3" orderindex="0" flowtype="event" >
             <delay bestcase="0 us" worstcase="0 us" >
                <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
             </delay>
@@ -752,23 +746,7 @@
       </dependency>
       <dependency name="conn_Ts_Ms" >
          <node name="|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:Ts" />
-         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="activation" name="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:Ms" orderindex="0" flowtype="event" >
-            <delay bestcase="0 us" worstcase="0 us" >
-               <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
-            </delay>
-         </activates>
-      </dependency>
-      <dependency name="conn_Ts_Ms_0" >
-         <node name="|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:Ts" />
-         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="dataflow" name="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:Ms" flowtype="event" >
-            <delay bestcase="0 us" worstcase="0 us" >
-               <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
-            </delay>
-         </activates>
-      </dependency>
-      <dependency name="conn_M3_T7" >
-         <node name="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:M3" />
-         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="activation" name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T7" orderindex="0" flowtype="event" >
+         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="dataflow" name="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:Ms" orderindex="0" flowtype="event" >
             <delay bestcase="0 us" worstcase="0 us" >
                <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
             </delay>
@@ -776,7 +754,15 @@
       </dependency>
       <dependency name="conn_M1_T6" >
          <node name="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:M1" />
-         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="activation" name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T6" orderindex="0" flowtype="event" >
+         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="dataflow" name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T6" orderindex="0" flowtype="event" >
+            <delay bestcase="0 us" worstcase="0 us" >
+               <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
+            </delay>
+         </activates>
+      </dependency>
+      <dependency name="conn_M3_T7" >
+         <node name="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:M3" />
+         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="dataflow" name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T7" orderindex="0" flowtype="event" >
             <delay bestcase="0 us" worstcase="0 us" >
                <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
             </delay>
@@ -792,15 +778,7 @@
       </dependency>
       <dependency name="conn_Ms_Tca" >
          <node name="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:Ms" />
-         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="activation" name="|P:PU12|RI:PU3|SI:ISRScheduler|SI:DefaultScheduler|SI:Tca" orderindex="0" flowtype="event" >
-            <delay bestcase="0 us" worstcase="0 us" >
-               <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
-            </delay>
-         </activates>
-      </dependency>
-      <dependency name="conn_Ms_Tca_0" >
-         <node name="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:Ms" />
-         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="dataflow" name="|P:PU12|RI:PU3|SI:ISRScheduler|SI:DefaultScheduler|SI:Tca" flowtype="event" >
+         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="dataflow" name="|P:PU12|RI:PU3|SI:ISRScheduler|SI:DefaultScheduler|SI:Tca" orderindex="0" flowtype="event" >
             <delay bestcase="0 us" worstcase="0 us" >
                <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
             </delay>
@@ -875,91 +853,15 @@
          <viewsmaximized value="false" />
       </viewprofile>
       <setting type="SimulatorWindow" >
-         <window width="1915" x="-65" y="181" height="1051" fullscreen="0" maximized="1" />
+         <window width="1915" x="-64" y="83" height="1051" fullscreen="0" maximized="1" />
+         <viewsmaximized value="true" />
       </setting>
       <setting type="EventSpectrumPlot" >
          <window width="1000" x="40" y="40" height="800" fullscreen="0" maximized="0" />
       </setting>
       <setting type="ResponseTimeCompositionWindow" >
-         <window width="1920" x="-9" y="-9" height="1051" fullscreen="0" maximized="1" />
+         <window width="1920" x="-8" y="-8" height="1057" fullscreen="0" maximized="0" />
       </setting>
-      <laststored>
-         <viewprofile active="true" name="default" >
-            <setting type="EnvironmentControl" >
-               <visible value="false" />
-            </setting>
-            <setting type="EventChainVisibility" >
-               <visible value="false" />
-            </setting>
-            <setting type="BoxPlotView" >
-               <visible value="false" />
-               <sortby value="resource, process" />
-            </setting>
-            <setting type="FunctionNestingView" >
-               <visible value="true" />
-               <autoDiagramHeight value="true" />
-               <diagram height="76" showdetails="false" name="T3:PU1" visible="true" />
-               <diagram height="76" showdetails="false" name="T2:PU1" visible="true" />
-               <diagram height="76" showdetails="false" name="T1:PU1" visible="true" />
-               <diagram height="76" showdetails="false" name="Ts:PU1" visible="true" />
-               <diagram height="76" showdetails="false" name="T7:PU2" visible="true" />
-               <diagram height="76" showdetails="false" name="T5:PU2" visible="true" />
-               <diagram height="76" showdetails="false" name="T6:PU2" visible="true" />
-               <diagram height="76" showdetails="false" name="T8:PU2" visible="true" />
-               <diagram height="76" showdetails="false" name="S1:PU3" visible="true" />
-               <diagram height="76" showdetails="false" name="S4:PU3" visible="true" />
-               <diagram height="76" showdetails="false" name="T4:PU3" visible="true" />
-               <diagram height="76" showdetails="false" name="Tca:PU3" visible="true" />
-            </setting>
-            <setting type="TraceView" >
-               <visible value="true" />
-               <window width="1915" x="0" y="-84" height="1041" fullscreen="0" maximized="0" />
-               <time value="112.875 ms" />
-            </setting>
-            <setting type="ProcessStateView" >
-               <visible value="true" />
-               <diagram height="70" showdetails="false" name="Load:PU1:PU1" visible="false" >
-                  <granularity value="1.25 ms" />
-                  <smoothing value="4" />
-               </diagram>
-               <diagram height="70" showdetails="false" name="Load:PU2:PU2" visible="false" >
-                  <granularity value="1.25 ms" />
-                  <smoothing value="4" />
-               </diagram>
-               <diagram height="70" showdetails="false" name="Load:PU3:PU3" visible="false" >
-                  <granularity value="1.25 ms" />
-                  <smoothing value="4" />
-               </diagram>
-               <autoDiagramHeight value="true" />
-               <diagram height="70" showdetails="false" name="T3:PU1" visible="true" />
-               <diagram height="70" showdetails="false" name="T2:PU1" visible="true" />
-               <diagram height="70" showdetails="false" name="T1:PU1" visible="true" />
-               <diagram height="70" showdetails="false" name="Ts:PU1" visible="true" />
-               <diagram height="70" showdetails="false" name="T7:PU2" visible="true" />
-               <diagram height="70" showdetails="false" name="T5:PU2" visible="true" />
-               <diagram height="70" showdetails="false" name="T6:PU2" visible="true" />
-               <diagram height="70" showdetails="false" name="T8:PU2" visible="true" />
-               <diagram height="70" showdetails="false" name="S1:PU3" visible="true" />
-               <diagram height="70" showdetails="false" name="Tca:PU3" visible="true" />
-               <diagram height="70" showdetails="false" name="T4:PU3" visible="true" />
-               <diagram height="70" showdetails="false" name="S4:PU3" visible="true" />
-               <diagram height="70" showdetails="false" name="CAN:c1" visible="true" />
-               <scaling value="3000" />
-               <time value="0 us" />
-               <window width="3042" x="119" y="-84" height="1055" fullscreen="0" maximized="0" />
-            </setting>
-            <viewsmaximized value="false" />
-         </viewprofile>
-         <setting type="SimulatorWindow" >
-            <window width="1920" x="-9" y="-9" height="1051" fullscreen="0" maximized="1" />
-         </setting>
-         <setting type="EventSpectrumPlot" >
-            <window width="1000" x="40" y="40" height="800" fullscreen="0" maximized="0" />
-         </setting>
-         <setting type="ResponseTimeCompositionWindow" >
-            <window width="1920" x="-9" y="-9" height="1051" fullscreen="0" maximized="1" />
-         </setting>
-      </laststored>
    </toolsettings>
    <report>
       <types csv="true" ipr="false" cvr="false" html="true" />
@@ -968,7 +870,7 @@
       <splitevent name="INCHRON_REPORT_SPLIT" enabled="false" />
       <functionalcorrectnessevent name="INCHRON_FUNCTIONAL_CORRECT" enabled="false" />
       <name></name>
-      <dir>:\Users\s168877\report</dir>
+      <dir>:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\report</dir>
       <template>builtin</template>
       <maxcalldepth>100</maxcalldepth>
       <hiddencpus></hiddencpus>
@@ -981,6 +883,7 @@
       <objective target="|P:PU12" priority="0" type="1" />
       <objective target="|P:PU12" priority="1" type="3" />
       <objective target="|P:PU12" priority="2" type="4" />
+      <objective target="|P:PU12|Re:All Requirements|Re:event_chain" priority="3" type="0" />
       <freedom isactive="true" target="|P:PU12" type="0" />
       <freedom isactive="true" target="|P:PU12" type="1" />
       <haltconditions haltnoimprovement="50" rankbelow="1" iterations="200" haltnoimprovefor="true" haltafter="true" haltrankbelow="true" />
