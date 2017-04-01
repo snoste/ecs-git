@@ -2,16 +2,16 @@
 <cs2:chronsimproject xmlns:cs2="http://www.inchron.com/inchron-2.8.0.xsd" xsi:schemaLocation="http://www.inchron.com/inchron-2.8.0.xsd" version="2.0" uuid="{f26c3a91-6bbd-40ce-ab61-8355f388bb9e}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
    <general>
       <dir>C:\Users\snorr</dir>
-      <sourceipr>C:\Users\snorr\Documents\GitHub\ecs-git\A2-Deliverables-hand-in\FR-from-class.ipr</sourceipr>
-      <savedir>C:\Users\snorr\Documents\GitHub\ecs-git\A2-Deliverables-hand-in</savedir>
+      <sourceipr>C:\Users\s168877\Documents\ECS2Rep\A2-Deliverables-hand-in\FR-from-class.ipr</sourceipr>
+      <savedir>C:\Users\s168877\Documents\ECS2Rep\A2-Deliverables-hand-in</savedir>
       <name>new project</name>
       <version></version>
       <description>
          <comment></comment>
          <creation>2017-03-31T14:09:40</creation>
-         <modification>2017-03-31T15:19:52</modification>
+         <modification>2017-04-01T12:56:50</modification>
       </description>
-      <last-modified>2017-03-31T17:19:52</last-modified>
+      <last-modified>2017-04-01T14:56:51</last-modified>
       <author></author>
       <email></email>
       <creator build="20170201A" version="2.8.0" />
@@ -32,26 +32,26 @@
          <rtos>
             <processes exclusive="false" preemptFlag="true" exactness="50" xcoreisrs="false" isrFlag="true" maximum="99" />
             <stack default="1024" />
-            <scheduler strategy="Priority" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" propagatedPriorities="false" order="0" coreaffinity="" priority="1" type="preemptive" jitter="0 us" wcet="0 us" uuid="{45513a9c-c5ff-4247-93a9-ccd24cd6b490}" allowed_types="4294967295" timeslice="10 ms" name="ISRScheduler" slot="0 us" bcet="0 us" >
+            <scheduler strategy="Priority" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" propagatedPriorities="false" order="0" coreaffinity="0" priority="1" type="preemptive" jitter="0 us" wcet="0 us" uuid="{45513a9c-c5ff-4247-93a9-ccd24cd6b490}" allowed_types="4294967295" timeslice="10 ms" name="ISRScheduler" slot="0 us" bcet="0 us" >
                <description>
                   <comment></comment>
                   <creation>2017-03-31T14:09:44</creation>
                   <modification>2017-03-31T14:09:44</modification>
                </description>
-               <scheduler strategy="first_in, first" offset="0 us" cycle="0 us" allowed_strategies="16415" inversepriority="false" period="0 us" blockingtime="0 us" propagatedPriorities="false" order="0" coreaffinity="" priority="0" type="preemptive" jitter="0 us" wcet="0 us" uuid="{3ebe4844-9241-47fe-a6e3-9bf62977e634}" allowed_types="4294967295" timeslice="10 ms" name="DefaultScheduler" slot="0 us" bcet="0 us" >
+               <scheduler strategy="first_in, first" offset="0 us" cycle="0 us" allowed_strategies="16415" inversepriority="false" period="0 us" blockingtime="0 us" propagatedPriorities="false" order="0" coreaffinity="0" priority="0" type="preemptive" jitter="0 us" wcet="0 us" uuid="{3ebe4844-9241-47fe-a6e3-9bf62977e634}" allowed_types="4294967295" timeslice="10 ms" name="DefaultScheduler" slot="0 us" bcet="0 us" >
                   <description>
                      <comment></comment>
                      <creation>2017-03-31T14:09:44</creation>
                      <modification>2017-03-31T14:09:44</modification>
                   </description>
-                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="Ts" preemptable="1" resource="" stack_limit="1024" init="0" >
-                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="0" extendedtask="0" jitter="0 us" wcet="100 us" uuid="{9715202d-d236-46e4-98f9-45066df3f0d5}" name="|P:new project|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:Ts" slot="0 us" bcet="100 us" >
+                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="T2" preemptable="1" resource="" stack_limit="1024" init="0" >
+                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="0" extendedtask="0" jitter="0 us" wcet="500 us" uuid="{15994c3f-80af-454f-bb71-29ef90fb7e98}" name="|P:new project|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:T2" slot="0 us" bcet="500 us" >
                         <description>
                            <comment></comment>
-                           <creation>2017-03-31T14:47:38</creation>
-                           <modification>2017-03-31T14:47:38</modification>
+                           <creation>2017-03-31T14:48:43</creation>
+                           <modification>2017-03-31T14:48:43</modification>
                         </description>
-                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="50 us" />
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="250 us" />
                      </instance>
                   </process>
                   <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="Ta" preemptable="1" resource="" stack_limit="1024" init="0" >
@@ -64,14 +64,14 @@
                         <simulationreplacement loadtype="Wcet" mean="0 us" sigma="50 us" />
                      </instance>
                   </process>
-                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="T2" preemptable="1" resource="" stack_limit="1024" init="0" >
-                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="0" extendedtask="0" jitter="0 us" wcet="500 us" uuid="{15994c3f-80af-454f-bb71-29ef90fb7e98}" name="|P:new project|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:T2" slot="0 us" bcet="500 us" >
+                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="Ts" preemptable="1" resource="" stack_limit="1024" init="0" >
+                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="0" extendedtask="0" jitter="0 us" wcet="100 us" uuid="{9715202d-d236-46e4-98f9-45066df3f0d5}" name="|P:new project|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:Ts" slot="0 us" bcet="100 us" >
                         <description>
                            <comment></comment>
-                           <creation>2017-03-31T14:48:43</creation>
-                           <modification>2017-03-31T14:48:43</modification>
+                           <creation>2017-03-31T14:47:38</creation>
+                           <modification>2017-03-31T14:47:38</modification>
                         </description>
-                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="250 us" />
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="50 us" />
                      </instance>
                   </process>
                </scheduler>
@@ -82,7 +82,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-31T14:09:44</creation>
-               <modification>2017-03-31T14:47:10</modification>
+               <modification>2017-04-01T12:56:16</modification>
                <targetcpu></targetcpu>
             </description>
             <ipcobjects/>
@@ -90,35 +90,35 @@
                <tokens/>
             </triggermodel>
             <references/>
-            <peripheral pAllowHaltDueToClock="false" pKeySlotId="2" pAllowPassiveToActive="1" base="0x1000" pdListenTimeOut="401202" pSingleSlotEnabled="false" pKeySlotUsedForSync="true" fabric="25" pRateCorrectionOut="601" pdMaxDrift="601" coldStarter="false" pLatestTx="243" pdMicrotick="0.025" pKeySlotUsedForStartup="true" uuid="{0c3abc0c-ae10-4cb3-85be-c04b35f02437}" name="t1" pOffsetCorrectionOut="261" >
+            <peripheral pAllowHaltDueToClock="false" pKeySlotId="2" pAllowPassiveToActive="1" base="0x1000" pdListenTimeOut="401202" pSingleSlotEnabled="false" pKeySlotUsedForSync="true" fabric="25" pRateCorrectionOut="601" pdMaxDrift="601" coldStarter="true" pLatestTx="243" pdMicrotick="0.025" pKeySlotUsedForStartup="true" uuid="{0c3abc0c-ae10-4cb3-85be-c04b35f02437}" name="t1" pOffsetCorrectionOut="261" >
                <description>
                   <comment></comment>
                   <creation>2017-03-31T14:15:07</creation>
                   <modification>2017-03-31T14:15:07</modification>
                   <targetperipheral></targetperipheral>
                </description>
-               <scheduler strategy="FlexRay" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" propagatedPriorities="false" order="0" coreaffinity="" priority="1" type="run-to-completi" jitter="0 us" wcet="0 us" uuid="{90b5965c-6a57-4863-8e7f-6438109f6e06}" allowed_types="4294967295" timeslice="10 ms" name="FlexRayMessages" slot="0 us" bcet="0 us" >
+               <scheduler strategy="FlexRay" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" propagatedPriorities="false" order="0" coreaffinity="0" priority="1" type="run-to-completi" jitter="0 us" wcet="0 us" uuid="{90b5965c-6a57-4863-8e7f-6438109f6e06}" allowed_types="4294967295" timeslice="10 ms" name="FlexRayMessages" slot="0 us" bcet="0 us" >
                   <description>
                      <comment></comment>
                      <creation>2017-03-31T14:15:07</creation>
                      <modification>2017-03-31T14:15:07</modification>
                   </description>
-                  <busmessage channel="0" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" payloadSize="0" propagatedPriorities="false" order="0" coreaffinity="" priority="1" slotNumber="2" jitter="0 us" wcet="208.312 us" uuid="{81389ab9-946e-46f7-8637-fff616536f84}" name="sync2" allowed_types="4294967295" timeslice="10 ms" cycleRepetition="1" baseCycle="0" slot="0 us" bcet="207.688 us" >
+                  <busmessage channel="0" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" payloadSize="0" propagatedPriorities="false" order="4" coreaffinity="0" priority="0" slotNumber="4" jitter="0 us" wcet="208.312 us" uuid="{ef5dcc6f-3efb-4c03-92ca-cfe9d8db8399}" name="mx" allowed_types="4294967295" timeslice="10 ms" cycleRepetition="1" baseCycle="0" slot="0 us" bcet="207.688 us" >
                      <description>
                         <comment></comment>
-                        <creation>2017-03-31T14:15:10</creation>
-                        <modification>2017-03-31T14:15:10</modification>
+                        <creation>2017-03-31T14:22:50</creation>
+                        <modification>2017-03-31T14:22:50</modification>
                      </description>
                      <events>
                         <event type="4" >start</event>
                         <event type="4" >stop</event>
                      </events>
                   </busmessage>
-                  <busmessage channel="0" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" payloadSize="0" propagatedPriorities="false" order="0" coreaffinity="" priority="1" slotNumber="1" jitter="0 us" wcet="208.312 us" uuid="{ef5dcc6f-3efb-4c03-92ca-cfe9d8db8399}" name="mx" allowed_types="4294967295" timeslice="10 ms" cycleRepetition="1" baseCycle="0" slot="0 us" bcet="207.688 us" >
+                  <busmessage channel="0" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" payloadSize="0" propagatedPriorities="false" order="2" coreaffinity="0" priority="0" slotNumber="2" jitter="0 us" wcet="208.312 us" uuid="{81389ab9-946e-46f7-8637-fff616536f84}" name="sync2" allowed_types="4294967295" timeslice="10 ms" cycleRepetition="1" baseCycle="0" slot="0 us" bcet="207.688 us" >
                      <description>
                         <comment></comment>
-                        <creation>2017-03-31T14:22:50</creation>
-                        <modification>2017-03-31T14:22:50</modification>
+                        <creation>2017-03-31T14:15:10</creation>
+                        <modification>2017-03-31T14:15:10</modification>
                      </description>
                      <events>
                         <event type="4" >start</event>
@@ -154,28 +154,18 @@
          <rtos>
             <processes exclusive="false" preemptFlag="true" exactness="50" xcoreisrs="false" isrFlag="true" maximum="99" />
             <stack default="1024" />
-            <scheduler strategy="Priority" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" propagatedPriorities="false" order="0" coreaffinity="" priority="1" type="preemptive" jitter="0 us" wcet="0 us" uuid="{804d0b02-e81f-4a67-83f2-b8b4946c5fb5}" allowed_types="4294967295" timeslice="10 ms" name="ISRScheduler" slot="0 us" bcet="0 us" >
+            <scheduler strategy="Priority" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" propagatedPriorities="false" order="0" coreaffinity="0" priority="1" type="preemptive" jitter="0 us" wcet="0 us" uuid="{804d0b02-e81f-4a67-83f2-b8b4946c5fb5}" allowed_types="4294967295" timeslice="10 ms" name="ISRScheduler" slot="0 us" bcet="0 us" >
                <description>
                   <comment></comment>
                   <creation>2017-03-31T14:09:45</creation>
                   <modification>2017-03-31T14:09:45</modification>
                </description>
-               <scheduler strategy="first_in, first" offset="0 us" cycle="0 us" allowed_strategies="16415" inversepriority="false" period="0 us" blockingtime="0 us" propagatedPriorities="false" order="0" coreaffinity="" priority="0" type="preemptive" jitter="0 us" wcet="0 us" uuid="{f4b50b74-9f5f-4263-8945-7932edaec509}" allowed_types="4294967295" timeslice="10 ms" name="DefaultScheduler" slot="0 us" bcet="0 us" >
+               <scheduler strategy="first_in, first" offset="0 us" cycle="0 us" allowed_strategies="16415" inversepriority="false" period="0 us" blockingtime="0 us" propagatedPriorities="false" order="0" coreaffinity="0" priority="0" type="preemptive" jitter="0 us" wcet="0 us" uuid="{f4b50b74-9f5f-4263-8945-7932edaec509}" allowed_types="4294967295" timeslice="10 ms" name="DefaultScheduler" slot="0 us" bcet="0 us" >
                   <description>
                      <comment></comment>
                      <creation>2017-03-31T14:09:45</creation>
                      <modification>2017-03-31T14:09:45</modification>
                   </description>
-                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="Tc" preemptable="1" resource="" stack_limit="1024" init="0" >
-                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="0" extendedtask="0" jitter="0 us" wcet="500 us" uuid="{91d5fd00-62f7-4d53-a24e-7dec2d1425c7}" name="|P:new project|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:Tc" slot="0 us" bcet="500 us" >
-                        <description>
-                           <comment></comment>
-                           <creation>2017-03-31T14:49:22</creation>
-                           <modification>2017-03-31T14:49:22</modification>
-                        </description>
-                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="250 us" />
-                     </instance>
-                  </process>
                   <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="T1" preemptable="1" resource="" stack_limit="1024" init="0" >
                      <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="0" extendedtask="0" jitter="0 us" wcet="500 us" uuid="{9d0e17a3-209d-41ce-893c-f6914df47953}" name="|P:new project|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T1" slot="0 us" bcet="500 us" >
                         <description>
@@ -186,6 +176,16 @@
                         <simulationreplacement loadtype="Wcet" mean="0 us" sigma="2.5 ms" />
                      </instance>
                   </process>
+                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="Tc" preemptable="1" resource="" stack_limit="1024" init="0" >
+                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="0" extendedtask="0" jitter="0 us" wcet="500 us" uuid="{91d5fd00-62f7-4d53-a24e-7dec2d1425c7}" name="|P:new project|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:Tc" slot="0 us" bcet="500 us" >
+                        <description>
+                           <comment></comment>
+                           <creation>2017-03-31T14:49:22</creation>
+                           <modification>2017-03-31T14:49:22</modification>
+                        </description>
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="250 us" />
+                     </instance>
+                  </process>
                </scheduler>
             </scheduler>
          </rtos>
@@ -194,7 +194,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-31T14:09:45</creation>
-               <modification>2017-03-31T14:47:19</modification>
+               <modification>2017-04-01T12:56:16</modification>
                <targetcpu></targetcpu>
             </description>
             <ipcobjects/>
@@ -209,24 +209,35 @@
                   <modification>2017-03-31T14:12:10</modification>
                   <targetperipheral></targetperipheral>
                </description>
-               <scheduler strategy="FlexRay" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" propagatedPriorities="false" order="0" coreaffinity="" priority="1" type="run-to-completi" jitter="0 us" wcet="0 us" uuid="{a0141097-2cd7-4ad7-855f-849fd800ea3f}" allowed_types="4294967295" timeslice="10 ms" name="FlexRayMessages" slot="0 us" bcet="0 us" >
+               <scheduler strategy="FlexRay" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" propagatedPriorities="false" order="0" coreaffinity="0" priority="1" type="run-to-completi" jitter="0 us" wcet="0 us" uuid="{a0141097-2cd7-4ad7-855f-849fd800ea3f}" allowed_types="4294967295" timeslice="10 ms" name="FlexRayMessages" slot="0 us" bcet="0 us" >
                   <description>
                      <comment></comment>
                      <creation>2017-03-31T14:12:10</creation>
                      <modification>2017-03-31T14:12:10</modification>
                   </description>
-                  <busmessage channel="0" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" payloadSize="0" propagatedPriorities="false" order="0" coreaffinity="" priority="1" slotNumber="1" jitter="0 us" wcet="208.312 us" uuid="{293c59a3-ea38-4409-b2b3-ce9aac6a9c01}" name="sync" allowed_types="4294967295" timeslice="10 ms" cycleRepetition="1" baseCycle="0" slot="0 us" bcet="207.688 us" >
+                  <busmessage channel="0" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" payloadSize="0" propagatedPriorities="false" order="3" coreaffinity="0" priority="0" slotNumber="3" jitter="0 us" wcet="208.312 us" uuid="{7ec9bf29-690f-47b0-a213-57cf39e4eff3}" name="m1" allowed_types="4294967295" timeslice="10 ms" cycleRepetition="2" baseCycle="0" slot="0 us" bcet="207.688 us" >
                      <description>
                         <comment></comment>
-                        <creation>2017-03-31T14:13:33</creation>
-                        <modification>2017-03-31T14:13:33</modification>
+                        <creation>2017-03-31T14:55:39</creation>
+                        <modification>2017-03-31T14:55:39</modification>
                      </description>
                      <events>
                         <event type="4" >start</event>
                         <event type="4" >stop</event>
                      </events>
                   </busmessage>
-                  <busmessage channel="0" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" payloadSize="0" propagatedPriorities="false" order="0" coreaffinity="" priority="1" slotNumber="1" jitter="0 us" wcet="208.312 us" uuid="{b28cdb23-7797-46cb-a985-ae6319f42a93}" name="mu" allowed_types="4294967295" timeslice="10 ms" cycleRepetition="1" baseCycle="0" slot="0 us" bcet="207.688 us" >
+                  <busmessage channel="0" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" payloadSize="0" propagatedPriorities="false" order="5" coreaffinity="0" priority="0" slotNumber="5" jitter="0 us" wcet="208.312 us" uuid="{4dbe712c-76b5-4b52-b3e8-2009cc63b493}" name="m12" allowed_types="4294967295" timeslice="10 ms" cycleRepetition="2" baseCycle="0" slot="0 us" bcet="207.688 us" >
+                     <description>
+                        <comment></comment>
+                        <creation>2017-04-01T12:13:55</creation>
+                        <modification>2017-04-01T12:13:55</modification>
+                     </description>
+                     <events>
+                        <event type="4" >start</event>
+                        <event type="4" >stop</event>
+                     </events>
+                  </busmessage>
+                  <busmessage channel="0" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" payloadSize="0" propagatedPriorities="false" order="7" coreaffinity="0" priority="0" slotNumber="7" jitter="0 us" wcet="208.312 us" uuid="{b28cdb23-7797-46cb-a985-ae6319f42a93}" name="mu" allowed_types="4294967295" timeslice="10 ms" cycleRepetition="1" baseCycle="0" slot="0 us" bcet="207.688 us" >
                      <description>
                         <comment></comment>
                         <creation>2017-03-31T14:55:11</creation>
@@ -237,11 +248,11 @@
                         <event type="4" >stop</event>
                      </events>
                   </busmessage>
-                  <busmessage channel="0" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" payloadSize="0" propagatedPriorities="false" order="0" coreaffinity="" priority="1" slotNumber="1" jitter="0 us" wcet="208.312 us" uuid="{7ec9bf29-690f-47b0-a213-57cf39e4eff3}" name="m1" allowed_types="4294967295" timeslice="10 ms" cycleRepetition="1" baseCycle="0" slot="0 us" bcet="207.688 us" >
+                  <busmessage channel="0" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" payloadSize="0" propagatedPriorities="false" order="1" coreaffinity="0" priority="0" slotNumber="1" jitter="0 us" wcet="208.312 us" uuid="{293c59a3-ea38-4409-b2b3-ce9aac6a9c01}" name="sync" allowed_types="4294967295" timeslice="10 ms" cycleRepetition="1" baseCycle="0" slot="0 us" bcet="207.688 us" >
                      <description>
                         <comment></comment>
-                        <creation>2017-03-31T14:55:39</creation>
-                        <modification>2017-03-31T14:55:39</modification>
+                        <creation>2017-03-31T14:13:33</creation>
+                        <modification>2017-03-31T14:13:33</modification>
                      </description>
                      <events>
                         <event type="4" >start</event>
@@ -279,11 +290,11 @@
             <modification>2017-03-31T14:11:26</modification>
             <targetperipheral></targetperipheral>
          </description>
-         <clock gran_unit="ns" range_value="0" start_unit="us" gran_value="10" drift_value="0" range_unit="us" id="|P:new project|Prp:FR1|Clk:FlexRayBusClock" uuid="{e2f14d5c-7626-48b5-bf29-07bc2791edef}" start_value="0" >
+         <clock gran_unit="ns" range_value="0" start_unit="us" gran_value="10" drift_value="0" range_unit="us" id="|P:new project|Prp:FR1|Clk:FlexRayBusClock" uuid="{cf85a88c-c605-425f-95ed-fe8835b65d30}" start_value="0" >
             <description>
                <comment></comment>
-               <creation>2017-03-31T14:11:26</creation>
-               <modification>2017-03-31T14:11:26</modification>
+               <creation>2017-04-01T12:56:16</creation>
+               <modification>2017-04-01T12:56:16</modification>
             </description>
             <start firstMax="0 us" firstMin="0 us" first="0 us" randomStart="false" />
          </clock>
@@ -291,7 +302,7 @@
    </allocation>
    <mapping>
       <map>
-         <source>|P:new project|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:Ts</source>
+         <source>|P:new project|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:T2</source>
          <target>|P:new project|RI:PU1</target>
       </map>
       <map>
@@ -299,15 +310,15 @@
          <target>|P:new project|RI:PU1</target>
       </map>
       <map>
-         <source>|P:new project|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:T2</source>
+         <source>|P:new project|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:Ts</source>
          <target>|P:new project|RI:PU1</target>
       </map>
       <map>
-         <source>|P:new project|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:Tc</source>
+         <source>|P:new project|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T1</source>
          <target>|P:new project|RI:PU2</target>
       </map>
       <map>
-         <source>|P:new project|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T1</source>
+         <source>|P:new project|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:Tc</source>
          <target>|P:new project|RI:PU2</target>
       </map>
       <connection>
@@ -340,91 +351,55 @@
             <description>
                <comment></comment>
                <creation>2017-03-31T14:57:45</creation>
-               <modification>2017-03-31T14:58:45</modification>
+               <modification>2017-04-01T12:56:16</modification>
             </description>
             <loss probability="0" />
          </generator>
          <generator clock="|P:new project|RI:PU1|Clk:PU1" type="peripheral" uuid="{5a50ff29-5b4f-44a3-9496-645cda3e71d6}" id="2" >
             <process name="|P:new project|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:T2" />
-            <time period="8 ms" periodic="1" iterations="0" first="0 us" relative="false" />
+            <time period="8 ms" periodic="1" iterations="0" first="4 ms" relative="false" />
             <random param1="0 us" param2="0 us" type="None" param3="0 us" param4="0 us" />
             <limitation minSeparationTime="0 us" />
             <description>
                <comment></comment>
                <creation>2017-03-31T14:58:47</creation>
-               <modification>2017-03-31T14:59:06</modification>
-            </description>
-            <loss probability="0" />
-         </generator>
-         <generator clock="|P:new project|RI:PU1|Clk:PU1" type="peripheral" uuid="{fc330583-3c57-4217-9284-5ed2baf7ee54}" id="3" >
-            <process name="|P:new project|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:Ts" />
-            <time period="4 ms" periodic="1" iterations="0" first="0 us" relative="false" />
-            <random param1="0 us" param2="0 us" type="None" param3="0 us" param4="0 us" />
-            <limitation minSeparationTime="0 us" />
-            <description>
-               <comment></comment>
-               <creation>2017-03-31T15:01:17</creation>
-               <modification>2017-03-31T15:02:13</modification>
+               <modification>2017-04-01T12:56:16</modification>
             </description>
             <loss probability="0" />
          </generator>
          <generator clock="|P:new project|RI:PU1|Clk:PU1" type="peripheral" uuid="{6d4553b4-39ae-4e0f-86dc-f57e520f7e6e}" id="4" >
             <process name="|P:new project|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:Ta" />
-            <time period="4 ms" periodic="1" iterations="0" first="0 us" relative="false" />
+            <time period="4 ms" periodic="1" iterations="0" first="3.5 ms" relative="false" />
             <random param1="0 us" param2="0 us" type="None" param3="0 us" param4="0 us" />
             <limitation minSeparationTime="0 us" />
             <description>
                <comment></comment>
                <creation>2017-03-31T15:02:15</creation>
-               <modification>2017-03-31T15:02:26</modification>
+               <modification>2017-04-01T12:56:16</modification>
             </description>
             <loss probability="0" />
          </generator>
          <generator clock="|P:new project|RI:PU2|Clk:PU2" type="peripheral" uuid="{90669942-46d2-449f-a767-8d3e439d2d3d}" id="5" >
             <process name="|P:new project|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:Tc" />
-            <time period="4 ms" periodic="1" iterations="0" first="0 us" relative="false" />
+            <time period="4 ms" periodic="1" iterations="0" first="2 ms" relative="false" />
             <random param1="0 us" param2="0 us" type="None" param3="0 us" param4="0 us" />
             <limitation minSeparationTime="0 us" />
             <description>
                <comment></comment>
                <creation>2017-03-31T15:02:28</creation>
-               <modification>2017-03-31T15:03:24</modification>
+               <modification>2017-04-01T12:56:16</modification>
             </description>
             <loss probability="0" />
          </generator>
-         <generator clock="|P:new project|RI:PU1|Clk:PU1" type="peripheral" uuid="{638d8fc9-3d7e-4a87-8644-0b354d1df9e1}" id="6" >
-            <busMessage name="|P:new project|RI:PU1|Prp:t1|SI:FlexRayMessages|SI:mx" />
-            <time period="4 ms" periodic="1" iterations="0" first="0 us" relative="false" />
+         <generator clock="|P:new project|RI:PU1|Clk:PU1" type="peripheral" uuid="{fc330583-3c57-4217-9284-5ed2baf7ee54}" id="3" >
+            <process name="|P:new project|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:Ts" />
+            <time period="4 ms" periodic="1" iterations="0" first="1 ms" relative="false" />
             <random param1="0 us" param2="0 us" type="None" param3="0 us" param4="0 us" />
             <limitation minSeparationTime="0 us" />
             <description>
                <comment></comment>
-               <creation>2017-03-31T15:04:10</creation>
-               <modification>2017-03-31T15:06:14</modification>
-            </description>
-            <loss probability="0" />
-         </generator>
-         <generator clock="|P:new project|RI:PU2|Clk:PU2" type="peripheral" uuid="{b05ffb60-1528-4bb5-87a9-a8296e107dcd}" id="7" >
-            <busMessage name="|P:new project|RI:PU2|Prp:t2|SI:FlexRayMessages|SI:m1" />
-            <time period="8 ms" periodic="1" iterations="0" first="0 us" relative="false" />
-            <random param1="0 us" param2="0 us" type="None" param3="0 us" param4="0 us" />
-            <limitation minSeparationTime="0 us" />
-            <description>
-               <comment></comment>
-               <creation>2017-03-31T15:06:15</creation>
-               <modification>2017-03-31T15:06:28</modification>
-            </description>
-            <loss probability="0" />
-         </generator>
-         <generator clock="|P:new project|RI:PU2|Clk:PU2" type="peripheral" uuid="{7f01e255-bc18-4997-9236-1874b05d2e25}" id="8" >
-            <busMessage name="|P:new project|RI:PU2|Prp:t2|SI:FlexRayMessages|SI:mu" />
-            <time period="4 ms" periodic="1" iterations="0" first="0 us" relative="false" />
-            <random param1="0 us" param2="0 us" type="None" param3="0 us" param4="0 us" />
-            <limitation minSeparationTime="0 us" />
-            <description>
-               <comment></comment>
-               <creation>2017-03-31T15:06:29</creation>
-               <modification>2017-03-31T15:06:45</modification>
+               <creation>2017-03-31T15:01:17</creation>
+               <modification>2017-04-01T12:56:16</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -434,17 +409,25 @@
    <synchronization/>
    <requirements/>
    <dependencygraph>
-      <dependency name="conn_mu_Ta" >
-         <node name="|P:new project|RI:PU2|Prp:t2|SI:FlexRayMessages|SI:mu" />
-         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="dataflow" name="|P:new project|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:Ta" orderindex="0" flowtype="event" >
+      <dependency name="conn_m1_T2" >
+         <node name="|P:new project|RI:PU2|Prp:t2|SI:FlexRayMessages|SI:m1" />
+         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="dataflow" name="|P:new project|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:T2" orderindex="0" flowtype="event" >
             <delay bestcase="0 us" worstcase="0 us" >
                <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
             </delay>
          </activates>
       </dependency>
-      <dependency name="conn_m1_T2" >
-         <node name="|P:new project|RI:PU2|Prp:t2|SI:FlexRayMessages|SI:m1" />
-         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="dataflow" name="|P:new project|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:T2" orderindex="0" flowtype="event" >
+      <dependency name="conn_m12_T2" >
+         <node name="|P:new project|RI:PU2|Prp:t2|SI:FlexRayMessages|SI:m12" />
+         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="activation" name="|P:new project|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:T2" orderindex="0" flowtype="event" >
+            <delay bestcase="0 us" worstcase="0 us" >
+               <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
+            </delay>
+         </activates>
+      </dependency>
+      <dependency name="conn_mu_Ta" >
+         <node name="|P:new project|RI:PU2|Prp:t2|SI:FlexRayMessages|SI:mu" />
+         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="dataflow" name="|P:new project|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:Ta" orderindex="0" flowtype="event" >
             <delay bestcase="0 us" worstcase="0 us" >
                <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
             </delay>
@@ -466,14 +449,6 @@
             </delay>
          </activates>
       </dependency>
-      <dependency name="conn_Tc_mu" >
-         <node name="|P:new project|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:Tc" />
-         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="dataflow" name="|P:new project|RI:PU2|Prp:t2|SI:FlexRayMessages|SI:mu" orderindex="0" flowtype="event" >
-            <delay bestcase="0 us" worstcase="0 us" >
-               <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
-            </delay>
-         </activates>
-      </dependency>
       <dependency name="conn_T1_m1" >
          <node name="|P:new project|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T1" />
          <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="dataflow" name="|P:new project|RI:PU2|Prp:t2|SI:FlexRayMessages|SI:m1" orderindex="0" flowtype="event" >
@@ -482,9 +457,34 @@
             </delay>
          </activates>
       </dependency>
+      <dependency name="conn_T1_m12" >
+         <node name="|P:new project|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T1" />
+         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="activation" name="|P:new project|RI:PU2|Prp:t2|SI:FlexRayMessages|SI:m12" orderindex="0" flowtype="event" >
+            <delay bestcase="0 us" worstcase="0 us" >
+               <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
+            </delay>
+         </activates>
+      </dependency>
+      <dependency name="conn_Tc_mu" >
+         <node name="|P:new project|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:Tc" />
+         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="dataflow" name="|P:new project|RI:PU2|Prp:t2|SI:FlexRayMessages|SI:mu" orderindex="0" flowtype="event" >
+            <delay bestcase="0 us" worstcase="0 us" >
+               <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
+            </delay>
+         </activates>
+      </dependency>
    </dependencygraph>
    <toolsettings>
       <viewprofile active="true" name="default" />
+      <setting type="EventSpectrumPlot" >
+         <window width="1000" x="40" y="40" height="800" fullscreen="0" maximized="0" />
+      </setting>
+      <setting type="ResponseTimeCompositionWindow" >
+         <window width="1920" x="-9" y="-9" height="1051" fullscreen="0" maximized="1" />
+      </setting>
+      <setting type="SimulatorWindow" >
+         <window width="1914" x="0" y="0" height="1045" fullscreen="0" maximized="0" />
+      </setting>
    </toolsettings>
    <report>
       <types csv="true" ipr="false" cvr="false" html="true" />
@@ -493,7 +493,7 @@
       <splitevent name="INCHRON_REPORT_SPLIT" enabled="false" />
       <functionalcorrectnessevent name="INCHRON_FUNCTIONAL_CORRECT" enabled="false" />
       <name></name>
-      <dir>report</dir>
+      <dir>:\Users\snorr\:\Users\snorr\:\Users\snorr\report</dir>
       <template>builtin</template>
       <maxcalldepth>100</maxcalldepth>
       <hiddencpus></hiddencpus>
