@@ -22,36 +22,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Introduction}{4}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Response Time analysis}{4}{section.2.2}
+\contentsline {section}{\numberline {2.2}Response Time analysis}{5}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Response time analysis per processing unit}{4}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.1}Response time analysis per processing unit}{5}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2} Response time analysis for the CAN bus messages}{5}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2} Response time analysis for the CAN bus messages}{6}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Optimisation for sensor-to-actuator delay}{5}{section.2.3}
+\contentsline {section}{\numberline {2.3}Optimisation for sensor-to-actuator delay}{6}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}System model}{5}{section.2.4}
+\contentsline {section}{\numberline {2.4}System model}{6}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Design decision}{5}{section.2.5}
+\contentsline {section}{\numberline {2.5}Design decision}{6}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Results}{5}{section.2.6}
+\contentsline {section}{\numberline {2.6}Results}{6}{section.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Conclusions}{5}{section.2.7}
+\contentsline {section}{\numberline {2.7}Conclusions}{7}{section.2.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Part 3}{6}{chapter.3}
+\contentsline {chapter}{\numberline {3}Part 3}{8}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Introduction}{6}{section.3.1}
+\contentsline {section}{\numberline {3.1}Introduction}{8}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Answer all the questions}{6}{section.3.2}
+\contentsline {section}{\numberline {3.2}Answer all the questions}{8}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Theoretical analysis versus actual implementation}{6}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}Theoretical analysis versus actual implementation}{8}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Design decision}{6}{section.3.3}
+\contentsline {section}{\numberline {3.3}Design decision}{8}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Results}{6}{section.3.4}
+\contentsline {section}{\numberline {3.4}Results}{8}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Conclusions}{6}{section.3.5}
+\contentsline {section}{\numberline {3.5}Conclusions}{8}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Results}{6}{section.3.6}
+\contentsline {section}{\numberline {3.6}Results}{8}{section.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Conclusion}{6}{section.3.7}
+\contentsline {section}{\numberline {3.7}Conclusion}{8}{section.3.7}

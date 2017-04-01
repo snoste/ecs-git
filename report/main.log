@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.17)  25 MAR 2017 16:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.17)  2 APR 2017 00:16
 entering extended mode
 **main.tex
 (C:\Users\snorr\Documents\GitHub\ecs-git\report\main.tex
@@ -963,7 +963,11 @@ File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 \@quotelevel=\count314
 \@quotereset=\count315
 
-(C:\Users\snorr\Documents\GitHub\ecs-git\report\main.aux)
+(C:\Users\snorr\Documents\GitHub\ecs-git\report\main.aux
+
+LaTeX Warning: Label `tab:addlabel' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
@@ -978,8 +982,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count316
 \scratchdimen=\dimen205
@@ -1104,35 +1107,53 @@ Chapter 1.
 
 ]
 Chapter 2.
-<img/pu1-response-time.png, id=173, 901.86937pt x 275.52937pt>
-File: img/pu1-response-time.png Graphic file (type png)
-
-<use img/pu1-response-time.png>
-Package pdftex.def Info: img/pu1-response-time.png used on input line 46.
-(pdftex.def)             Requested size: 330.42041pt x 100.94786pt.
-
-<img/pu2-response-time.png, id=175, 810.02625pt x 354.57469pt>
-File: img/pu2-response-time.png Graphic file (type png)
-
-<use img/pu2-response-time.png>
-Package pdftex.def Info: img/pu2-response-time.png used on input line 54.
-(pdftex.def)             Requested size: 330.42041pt x 144.63533pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+<img/treeCAN.png, id=174, 590.205pt x 341.77687pt>
+File: img/treeCAN.png Graphic file (type png)
+ <use img/treeCAN.png>
+Package pdftex.def Info: img/treeCAN.png used on input line 19.
+(pdftex.def)             Requested size: 424.82523pt x 246.01135pt.
 
 [4
 
- <C:/Users/snorr/Documents/GitHub/ecs-git/report/img/pu1-response-time.png>]) (
-C:\Users\snorr\Documents\GitHub\ecs-git\report\part3.tex [5 <C:/Users/snorr/Doc
-uments/GitHub/ecs-git/report/img/pu2-response-time.png>]
+ <C:/Users/snorr/Documents/GitHub/ecs-git/report/img/treeCAN.png>]
+<img/pu1-response-time.png, id=182, 770.12718pt x 187.45032pt>
+File: img/pu1-response-time.png Graphic file (type png)
+
+<use img/pu1-response-time.png>
+Package pdftex.def Info: img/pu1-response-time.png used on input line 41.
+(pdftex.def)             Requested size: 472.03123pt x 114.89082pt.
+
+<img/pu2-response-time.png, id=184, 677.53125pt x 250.68657pt>
+File: img/pu2-response-time.png Graphic file (type png)
+
+<use img/pu2-response-time.png>
+Package pdftex.def Info: img/pu2-response-time.png used on input line 49.
+(pdftex.def)             Requested size: 472.03123pt x 174.65698pt.
+ [5 <C:/Users/snorr/Documents/GitHub/ecs-git/report/img/pu1-response-time.png> 
+<C:/Users/snorr/Documents/GitHub/ecs-git/report/img/pu2-response-time.png>]
+<img/msgCAN.png, id=196, 582.67688pt x 119.69719pt>
+File: img/msgCAN.png Graphic file (type png)
+ <use img/msgCAN.png>
+Package pdftex.def Info: img/msgCAN.png used on input line 88.
+(pdftex.def)             Requested size: 472.03123pt x 96.97061pt.
+
+<img/messagesCANtimings.png, id=197, 758.835pt x 167.87718pt>
+File: img/messagesCANtimings.png Graphic file (type png)
+
+<use img/messagesCANtimings.png>
+Package pdftex.def Info: img/messagesCANtimings.png used on input line 96.
+(pdftex.def)             Requested size: 472.03123pt x 104.42859pt.
+)
+(C:\Users\snorr\Documents\GitHub\ecs-git\report\part3.tex [6 <C:/Users/snorr/Do
+cuments/GitHub/ecs-git/report/img/msgCAN.png> <C:/Users/snorr/Documents/GitHub/
+ecs-git/report/img/messagesCANtimings.png>] [7]
 Chapter 3.
 ) (C:\Users\snorr\Documents\GitHub\ecs-git\report\results.tex)
 (C:\Users\snorr\Documents\GitHub\ecs-git\report\concl.tex)
 
 LaTeX Warning: Empty bibliography on input line 42.
 
-[6
+[8
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 44.
@@ -1147,13 +1168,16 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.28pt have occurred.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 31502 strings out of 493921
- 710245 string characters out of 3144876
- 1205153 words of memory out of 3000000
- 34260 multiletter control sequences out of 15000+200000
+ 31526 strings out of 493921
+ 710659 string characters out of 3144876
+ 1205250 words of memory out of 3000000
+ 34275 multiletter control sequences out of 15000+200000
  12715 words of font info for 49 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  55i,9n,77p,815b,664s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1165,9 +1189,9 @@ gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on main.pdf (7 pages, 160160 bytes).
+Output written on main.pdf (9 pages, 201983 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
- 41 named destinations out of 1000 (max. 500000)
- 247 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 252 PDF objects out of 1000 (max. 8388607)
+ 47 named destinations out of 1000 (max. 500000)
+ 262 words of extra memory for PDF output out of 10000 (max. 10000000)
 
