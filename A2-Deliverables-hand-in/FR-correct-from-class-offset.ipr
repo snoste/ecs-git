@@ -9,9 +9,9 @@
       <description>
          <comment></comment>
          <creation>2017-03-31T14:09:40</creation>
-         <modification>2017-04-01T16:20:19</modification>
+         <modification>2017-04-01T17:01:34</modification>
       </description>
-      <last-modified>2017-04-01T18:21:04</last-modified>
+      <last-modified>2017-04-01T19:01:38</last-modified>
       <author></author>
       <email></email>
       <creator build="20170201A" version="2.8.0" />
@@ -82,7 +82,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-31T14:09:44</creation>
-               <modification>2017-04-01T15:48:12</modification>
+               <modification>2017-04-01T16:43:54</modification>
                <targetcpu></targetcpu>
             </description>
             <ipcobjects/>
@@ -103,7 +103,7 @@
                      <creation>2017-03-31T14:15:07</creation>
                      <modification>2017-03-31T14:15:07</modification>
                   </description>
-                  <busmessage channel="0" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" payloadSize="0" propagatedPriorities="false" order="5" coreaffinity="0" priority="0" slotNumber="4" jitter="0 us" wcet="208.312 us" uuid="{ef5dcc6f-3efb-4c03-92ca-cfe9d8db8399}" name="mx" allowed_types="4294967295" timeslice="10 ms" cycleRepetition="1" baseCycle="0" slot="0 us" bcet="207.688 us" >
+                  <busmessage channel="0" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" payloadSize="0" propagatedPriorities="false" order="4" coreaffinity="0" priority="0" slotNumber="4" jitter="0 us" wcet="208.312 us" uuid="{ef5dcc6f-3efb-4c03-92ca-cfe9d8db8399}" name="mx" allowed_types="4294967295" timeslice="10 ms" cycleRepetition="1" baseCycle="0" slot="0 us" bcet="207.688 us" >
                      <description>
                         <comment></comment>
                         <creation>2017-03-31T14:22:50</creation>
@@ -194,7 +194,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-31T14:09:45</creation>
-               <modification>2017-04-01T15:48:12</modification>
+               <modification>2017-04-01T16:43:54</modification>
                <targetcpu></targetcpu>
             </description>
             <ipcobjects/>
@@ -226,7 +226,7 @@
                         <event type="4" >stop</event>
                      </events>
                   </busmessage>
-                  <busmessage channel="0" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" payloadSize="0" propagatedPriorities="false" order="6" coreaffinity="0" priority="0" slotNumber="5" jitter="0 us" wcet="208.312 us" uuid="{4dbe712c-76b5-4b52-b3e8-2009cc63b493}" name="m12" allowed_types="4294967295" timeslice="10 ms" cycleRepetition="2" baseCycle="0" slot="0 us" bcet="207.688 us" >
+                  <busmessage channel="0" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" payloadSize="0" propagatedPriorities="false" order="5" coreaffinity="0" priority="0" slotNumber="5" jitter="0 us" wcet="208.312 us" uuid="{4dbe712c-76b5-4b52-b3e8-2009cc63b493}" name="m12" allowed_types="4294967295" timeslice="10 ms" cycleRepetition="2" baseCycle="0" slot="0 us" bcet="207.688 us" >
                      <description>
                         <comment></comment>
                         <creation>2017-04-01T12:13:55</creation>
@@ -290,11 +290,11 @@
             <modification>2017-03-31T14:11:26</modification>
             <targetperipheral></targetperipheral>
          </description>
-         <clock gran_unit="ns" range_value="0" start_unit="us" gran_value="10" drift_value="0" range_unit="us" id="|P:new project|Prp:FR1|Clk:FlexRayBusClock" uuid="{2ef422d5-cd51-4214-ac05-23d4ff956944}" start_value="0" >
+         <clock gran_unit="ns" range_value="0" start_unit="us" gran_value="10" drift_value="0" range_unit="us" id="|P:new project|Prp:FR1|Clk:FlexRayBusClock" uuid="{6b6aeab8-ab00-4868-8964-22cdc94de1ee}" start_value="0" >
             <description>
                <comment></comment>
-               <creation>2017-04-01T15:48:12</creation>
-               <modification>2017-04-01T15:48:12</modification>
+               <creation>2017-04-01T16:43:54</creation>
+               <modification>2017-04-01T16:43:54</modification>
             </description>
             <start firstMax="0 us" firstMin="0 us" first="0 us" randomStart="false" />
          </clock>
@@ -351,7 +351,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-31T14:57:45</creation>
-               <modification>2017-04-01T15:48:12</modification>
+               <modification>2017-04-01T16:43:54</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -363,7 +363,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-31T14:58:47</creation>
-               <modification>2017-04-01T15:48:12</modification>
+               <modification>2017-04-01T16:43:54</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -375,7 +375,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-31T15:02:15</creation>
-               <modification>2017-04-01T15:48:12</modification>
+               <modification>2017-04-01T16:43:54</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -387,7 +387,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-31T15:02:28</creation>
-               <modification>2017-04-01T15:48:12</modification>
+               <modification>2017-04-01T16:43:54</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -399,7 +399,7 @@
             <description>
                <comment></comment>
                <creation>2017-03-31T15:01:17</creation>
-               <modification>2017-04-01T15:48:12</modification>
+               <modification>2017-04-01T16:43:54</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -411,7 +411,7 @@
             <description>
                <comment></comment>
                <creation>2017-04-01T12:22:35</creation>
-               <modification>2017-04-01T15:48:12</modification>
+               <modification>2017-04-01T16:43:54</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -423,7 +423,7 @@
             <description>
                <comment></comment>
                <creation>2017-04-01T12:23:14</creation>
-               <modification>2017-04-01T15:48:12</modification>
+               <modification>2017-04-01T16:43:54</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -435,7 +435,7 @@
             <description>
                <comment></comment>
                <creation>2017-04-01T12:23:31</creation>
-               <modification>2017-04-01T15:48:12</modification>
+               <modification>2017-04-01T16:43:54</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -447,7 +447,7 @@
             <description>
                <comment></comment>
                <creation>2017-04-01T12:23:53</creation>
-               <modification>2017-04-01T15:48:12</modification>
+               <modification>2017-04-01T16:43:54</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -459,7 +459,7 @@
             <description>
                <comment></comment>
                <creation>2017-04-01T12:09:12</creation>
-               <modification>2017-04-01T15:48:12</modification>
+               <modification>2017-04-01T16:43:54</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -471,7 +471,7 @@
             <description>
                <comment></comment>
                <creation>2017-04-01T12:20:49</creation>
-               <modification>2017-04-01T15:48:12</modification>
+               <modification>2017-04-01T16:43:54</modification>
             </description>
             <loss probability="0" />
          </generator>
@@ -557,8 +557,8 @@
       <setting type="SimulatorWindow" >
          <window width="1920" x="-8" y="-8" height="1057" fullscreen="0" maximized="1" />
          <referenceCursors num="2" >
-            <cursor id="0" pos="43.134 ms" />
-            <cursor id="1" pos="45.734 ms" />
+            <cursor id="0" pos="42.134 ms" />
+            <cursor id="1" pos="46.634 ms" />
          </referenceCursors>
       </setting>
    </toolsettings>
