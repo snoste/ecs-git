@@ -2,8 +2,7 @@
 %• REPORT – Part 1
 
 \section{Introduction}
-%• Very brief introduction of the overall problem setting (< page
-%max)
+In this part we discuss the response time analysis of tasks in PU1, PU2 and messages of CAN bus for the configuration given in the assignment. Design and simulation of rotor position and input voltage of DC motor given in the assignment is described. Design space exploration and determining optimal pareto points satisfying design constraints using multi-objective genetic algorithm is discussed.
 
 \section{Response Time analysis}
 \subsection{Fixed-Priority Non-Preemptive}
@@ -150,7 +149,7 @@ Foll0wing are the design decisions taken before simulating the system.
 
 \begin{enumerate}
 \item Employing Rate-Monotonic -Scheduling (RMS). That is the tasks with lower period gets higher priority. This ensures Task $T_s$ and message $m_s$ have highest priorities and thus reducing sensor-actuator delay. Therefore Sensor-to-actuator delay can be computed as 
-$$D_c=T_s+m_s+2S+T_ca$$ This results in sensor-actuator delay of 8.1ms.
+$$D_c=T_s+m_s+2S+T_ca$$ This results in sensor-to-actuator delay of 8.1ms.
 The TDMA cycle of PU3 is 10ms$(>D_c)$. Therefore we can have a sampling period of 10ms.
 \item Simulate the above system using above design parmeters $h_c$ and $D_c$.Apply multi-objective genetic algorithm on the above system, with pole positions as parameters, and settling-time and maximum input voltage as our objectives. The design constraints are settling time less than 400ms and input voltage less than 1v. Obtain pareto optimal points satisfying design constraints.  The lower and upper bounds used for pole positions are 0 and 1 respectively.
 \end{enumerate}
