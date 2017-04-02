@@ -1,0 +1,122 @@
+\section{System Model Derivation and Control Parameter Design}
+%• System model derivation, design space exploration and controller
+%parameter design
+The objectives for the controller is to properly control the given system with a set of design parameters. These parameters, shown in Table %\ref{tab:design}, have to be design and put into perspective with our system, which role they play and the best way to derive them adequately.
+
+There are namely a number of steps taken until all parameters can be considered to satisfy the performance constraints of the controller. These basic steps can be seen in the following list.
+
+\begin{enumerate}
+	\item Step 1: Derive the system model. Determine the A, B and C matrices in relation to all constants by hand calculations. We are already provided with the matrices in assignment description, hence no need to derive.Insert this into Matlab.
+	 	
+	\item Step 2: Derive the values for sampling period and sensor-to-actuator delay based on our system design.
+	
+	\item Step 3: Choosing desired poles according to the given requirements. Verfiying the controllability of the system for the choosen values. Computing the controller Feed-Forward and Feed-Back gains $F$ and $K$. Inserting these calculations into MATLAB. More about this step can be found in Section %\ref{sec:platform}.
+	
+	\item Step4: Design K and F values, compute current input activation(u) and outputs(x) from equations, insert these calculations to MATLAB and simulate the system. 
+	
+	\item Step5: Apply multi-objective genetic algorithm on the above system, with pole positions as parameters, and settling-time and maximum input voltage as our objectives. Obtain pareto optimal points satisfying design constraints. 
+\end{enumerate}
+
+
+	
+	\begin{table}[htbp]
+		\centering
+		\caption{Constants and design parameters referenced to in calculations}
+		\begin{tabular}{llll}
+			\toprule
+			Symbol & Description & Value & Unit\\ 
+			\midrule
+			$\theta$ & Rotor position  & -&rad \\ 
+			$i_m$ & Motor current  & - &A \\ 
+			J & Inertia  & $3.2284\cdot10^{-6}$&$Kgm^2$  \\ 
+			b & Friction  coefficient   &$ 3.5077\cdot10^{-6} $&Nms/rad\\ 
+			R & Armature Resistance  & 4 &Ohm\\
+			L & Inductance of Motor Winding  & $2.75\cdot10^{-6}$&H \\ 
+			$K_m$ & Motor constant  & $0.0274$&Nm/A  \\ 
+			K&Feed-BackGain&-&-\\
+			F&Feed-Forward Gain&-&-\\
+			\midrule
+		\end{tabular}
+		\label{tab:constants}
+	\end{table}
+	
+	
+	
+	\subsection{Controller Structure}
+	\label{sec:controllerstructure}
+	The system can be described with the second order differential equation shown in Equation \ref{eq:1} as given in the assignment description. Equation \ref{eq:2} and Equation \ref{eq:3} describe the statespace representation of our system. From these equations the Feedback- and Feedforward gain can be determined in relations to the constants in the system. 
+	
+	
+	\begin{equation}
+	\text{\textit{\textbf{x}}} =
+	\begin{bmatrix}
+	x_1 \\
+	x_2  \\
+	x_3   
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+	\theta\\
+	\dot{\theta}\\
+	i
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+	\theta\\
+	\omega\\
+     i
+	\end{bmatrix}
+	\quad\text{ and }\quad
+	\dot{\text{\textit{\textbf{x}}}} =
+	\begin{bmatrix}
+	\dot{\theta}\\
+	\ddot{\theta}\\
+	\dot{i}
+	\end{bmatrix}
+	\vspace{.2em}
+	\label{eq:1}
+	\end{equation}
+	
+
+	
+	\begin{equation}
+	\dot{\text{\textit{\textbf{x}}}}  = {\text{\textbf{A}}}\text{\textit{\textbf{x}}}  +  {\text{\textbf{B}}}\text{\textit{{u}}}  \text{ and } \text{\textit{{y}}}  = {\text{\textbf{C}}}\text{\textit{\textbf{x}}}  \qquad \text{ where } \quad \text{input: \textit{{u}}}=V \quad\text{ , output: \textit{{y}}}=i
+	\label{eq:2}
+	\end{equation}
+	
+	%Equation \ref{eq:4} and \ref{eq:5} show the same equation. But the matrices can be derived by combing the equations above and resulting in Equation \ref{eq:5}. This can then be used to calculate the K and F values mentioned in Table \ref{tab:design}.
+	
+	\begin{equation}
+	\dot{\text{\textit{\textbf{x}}}}  = \begin{bmatrix}
+	0 & 1 & 0 \\
+	0&\frac{-b}{J}&\frac{K_m}{J} \\
+	0&\frac{-K_m}{L}&\frac{-R}{L} \\
+	\end{bmatrix}
+	\begin{bmatrix}
+	\theta\\
+	\omega\\
+	i\\
+	\end{bmatrix}
+	+
+	\begin{bmatrix}
+	0\\
+	0\\
+	\dfrac{1}{L}\\
+	
+	\end{bmatrix}\text{\textit{{V}}}
+	\quad \text{ and } \quad
+	\text{\textit{{y}}}=\begin{bmatrix}
+	1&0&0
+	\end{bmatrix}
+	\begin{bmatrix}
+	\theta\\
+	\omega\\
+	i\\
+	\end{bmatrix}
+	\label{eq:3}
+	\end{equation}
+\subsection{Controller Design}
+In this subsection we discuss the method for designing the controller design parameters FeedbackGain-$K$ and FeedForwardGain-$F$. In this problem we have the scenario where $D_c<h$. Since our controller operates in discrete sample time, we start with converting our continuous system as described in equation \ref{eq:code1} into discrete domain. Therefore on applying ZOH sampling with period $h_c$ and constant sensor-actuator Delay $D_c$ we achieve the equation \ref{eq:code2} for discrete sample time system. From \ref{eq:code2} we can notice that the next output not only depends on current input but also on previous input. Hence, we simplify the system and get it into standard form representing equation \ref{eq:code3} by invoking equation\ref{eq:code6}. After applying above simplification input $u[k]$ can be represented in terms of controller gains using equation\ref{eq:code7}. 
+and matrices $\Phi$ ,$C$ are converted to corresponding augmented matrices $\Phi_{aug}$,$C_{aug}$, whereas $\Gamma_1$,$\Gamma_2$ are converted to single augmented matrix $\Gamma_{aug}$.
+\input{code}
+Before deriving the controller gains it is important to verify if the system is controllable under given configuration. This can be verified by calculating $det(\gamma_{aug})$. If the determinent is not equal to 0, then system is controllable. After verifying the controllability of the system $K$ can be derived by applying Ackermanns formula described in equation \ref{eq:code4} and $F$ can be derived from equation \ref{eq:code5} . However, one can notice the matrix $H(\Phi_{aug})$ depends on the desired poles which in turn depends on the design requirements. The desired poles alter the frequency spectrum of the transfer function of the system and play a significant role in controlling the behavariour of output parameters of the system. Therefore various design requirements such as Overshooot, settling time, boundary ranges of the parameters in the system depends on the desired poles and thus in turn influence controller gains $K$ and $F$. Following design, work flow has been developed in MATLAB to derive pareto optimal points(pole locations) satisfying design constraints using multi-objective genetic algorithm and one of the optimal point is selected for simluation.

@@ -1,0 +1,42 @@
+\begin{equation}
+\dot{x}  =  A x  +   B u  \quad{\text{   and   } }\quad  y  =  C x  
+\label{eq:code1}
+\end{equation}
+
+
+\begin{equation}
+x[k+1]= \phi x [k]+ \Gamma_1(D_c)u[k-1]+\Gamma_0(D_c)u[k] \quad \text{ and } \quad y[k] = C x[k]
+\label{eq:code2}
+\end{equation}
+
+
+\begin{equation}
+x[k+1]= \phi z [k]+ \Gamma_{aug}u[k] \quad \text{ and } \quad y[k] + C_{aug} z[k]
+\label{eq:code3}
+\end{equation}
+
+\begin{equation}
+z[k]=\begin{bmatrix}
+x[k]\\
+u[k-1]
+\end{bmatrix}
+\label{eq:code6}
+\end{equation}
+
+\begin{equation}
+u[k] = Kz[k] + Fr 
+\label{eq:code7} 
+\end{equation}
+
+
+\begin{equation}
+ K = -[ \ 0 \ 0 \ \cdots \ 1 \ ] \gamma_{aug}^{-1} H(\phi_{aug})
+\label{eq:code4} 
+\end{equation}
+
+\begin{equation}
+ F = \dfrac{1}{C_{aug} (I-\phi_{aug}-\Gamma_{aug}K)^{-1}\Gamma_{aug}}
+\label{eq:code5}
+\end{equation}
+
+
