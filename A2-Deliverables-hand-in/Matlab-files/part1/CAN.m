@@ -7,10 +7,12 @@ clear all;
 %% Response time analysis -- non-preemptive case
 
 %% period, deadline, wcet and prioriy
- T = [5, 2, 1, 1;   % ms
-      10, 15, 1, 2; % m1
-      20, 30, 1, 4; % m3
-      10, 10, 1, 3; % m8
+
+% CAN messages
+ T = [5, 2, 1, 1;   % m_s
+      10, 15, 1, 2; % m_1
+      20, 30, 1, 4; % m_3
+      10, 10, 1, 3; % m_8
       ];
 
 tau_res = 0.00001;
