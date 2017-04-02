@@ -10,68 +10,87 @@ Now describe the setup for the FlexRay modeling part, Figure \ref{fig:FRdia} sho
 	\begin{center}
 		
 			\begin{tabular}{cc}
-				\includegraphics[width=0.5\linewidth]{img/FR-diagram} & \includegraphics[width=0.35\linewidth]{img/FR-setup}	\\
+				\includegraphics[width=0.5\linewidth]{img/FR-diagram} & \includegraphics[width=0.35\linewidth]{img/FR-setup} \\
 			\end{tabular}
 			\caption{On the left, system diagram and on the right the tree view and architecture of the Inchron project. }
 		\label{fig:FRdia}
 	\end{center}
 \end{figure}
 
+The main purpose in this part is to firstly create a theoretical analysis to be able to model the FlexRay in Inchron. Then seeing how the implementation is doing in the model and optimize any timings that have room for change. 
 
-\section{Answer all the questions}
+\section{Answering the questions}
 
 
 \begin{enumerate}
-	\item What is the maximum cycle length possible? 
+	\item \textit{What is the maximum cycle length possible? }
 	
-	\item What are the maximum possible durations for:
+	The given cycle length is 4 ms so that is the maximum cycle length in our case.
+	
+	\item \textit{What are the maximum possible durations for:}
 	
 	\begin{enumerate}
-			\item static slot?
+			\item \textit{static slot?} If considering only static slots with size of 0.5 (largest execution time considered of all messages AND tasks for easy scheduling) then maximum is $\frac{4 \; ms}{0.5 \; ms} = 8$
 			
-			\item dynamic slot?
+			\item\textit{ dynamic slot? }Only dynamic considering a constant size of 0.25 ms: $\frac{4 \; ms}{0.25 \; ms} = 16$
 			
-			\item Network idle time?
+			\item \textit{Network idle time? }This will maintain synchronization between the two ECUs and for each it takes one slot so in total this is taking up two slots $= 2 \; slots \cdot 0.5 \; ms = 1 \; ms$.
 	\end{enumerate}	
 	
-	\item Derive the implicitly defined parameters (e.g., no. of minislots).
+	\item\textit{ Derive the implicitly defined parameters (e.g., no. of minislots).}
 	
-	\item Why do you need idle phase within a dynamic slot?
+	\item\textit{ Why do you need idle phase within a dynamic slot?} There is some idle time needed to react correctly on the coming messages to dynamic slots.
 	
-	\item Does the above parameters conform to FlexRay specification?
+	\item \textit{Does the above parameters conform to FlexRay specification?}
 	
-	\item Answer the above questions in your report Electrical Engineering
 \end{enumerate}
-What is the maximum cycle length possible? 
-
-What are the maximum possible durations for
-
-static slot?
-
-dynamic slot?
-
-Network idle time?
-
-Derive the implicitly defined parameters (e.g., no. of minislots).
-
-Why do you need idle phase within a dynamic slot?
-
-Does the above parameters conform to FlexRay specification?
-
-Answer the above questions in your report Electrical Engineering
-
 
 
 \subsection{Theoretical analysis versus actual implementation}
 %Comment on differences from the theoretical analysis and actual implementation
-
+The theoretical analysis was done on paper with most parameters known and then model in Inchron to validate the behavior. There are obvious differences concerning cold start and such that will differ in actual implementation and in theory. But is is possible to counteract this be at least assuming a difference, not knowing how large the difference will be.
 
 \section{Design decision}
 %• Your design decision and justification.
 
+Firstly when starting design of theoretical analysis, it was done on paper to figure out the order of the messages and tasks within the static slots and which should go in the dynamic slot. The largest message would be best put in the dynamic slot, $m_1$. Then when realizing that the dynamic slots are not behaving correctly in Inchron, then it was decided to use only static slots. Then a problem arose, the size of each static slot is only 200 bytes but $m_1$ is 290 bytes. Thus splitting it up to two will do the trick.
+
+It is very important to note that communication is included in the theoretical analysis but in Inchron they were skipped to lower the complexity but still there is room for everything and they are encountered for. In Figure \ref{fig:FRdrawing} the analysis on paper is showed for both ECUs and the FlexRay and how the messages are executing.
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.9\linewidth]{img/FR-drawing-2}
+		\caption{}
+		\label{fig:FRdrawing}
+	\end{center}
+\end{figure}
+
+After applying this setup, exact parameters are shown in the results, to the model it showed that the tasks were staring before their cycle was actually happening. By measuring the exact offset it was possible to add it to all the tasks and messages to make the systems behave correctly. 
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.9\linewidth]{img/FR-offset}
+		\caption{Before optimization/offset the tasks are not hitting the start of the cycle, in fact all of the tasks are too early by 2.134 ms as seen in this figure.}
+		\label{fig:FRoffset}
+	\end{center}
+\end{figure}
+
+
+
 \section{Results}
 
-Firstly: Solution to the design problem. (Include the parameters you have chosen)\\
+Firstly: The solution to the design problem can be seen in Table \ref{tab:flextsk} and \ref{tab:flexmsg}
 Secondly: from chronVIEW for your design
 
+\input{b}
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.9\linewidth]{img/FR-state-Diagram}
+		\caption{}
+		\label{fig:FRdiagram}
+	\end{center}
+\end{figure}
+
 \section{Conclusions}
+
+The final version of the parameters work as expected counteracting the initial offset. The reason for the initial offset is partially unknown but it is likely caused by the coldstart and obviously the synchronization is not behaving exactly as set to.
