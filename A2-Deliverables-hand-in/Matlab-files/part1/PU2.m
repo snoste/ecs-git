@@ -7,19 +7,11 @@ clear all;
 %% Response time analysis -- preemptive case
 
 %% period, deadline, wcet and prioriy
-
-% % PU1 
-%  T = [5, 10, .1, 1;   % Ts
-%       10, 1, 2, 2;    % T1
-%       15, 1, 2, 3;    % T2
-%       20, 5, 3, 4;    % T3
-%     ];
-
-%PU2
- T = [15, 10, 1, 3;  % t5  2
-      10, 1, 3, 2;   % t6  3
-      20, 1, 3, 4;   % t7  1
-      10, 5, 2, 1;   % t8  4
+%PU2                 Task  Inchron Priorities
+ T = [15, 10, 1, 3;  % T5  2
+      10, 1, 3, 2;   % T6  3
+      20, 1, 3, 4;   % T7  1
+      10, 5, 2, 1;   % T8  4
     ];
 
 

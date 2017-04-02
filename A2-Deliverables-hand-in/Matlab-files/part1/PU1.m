@@ -8,22 +8,12 @@ clear all;
 
 %% period, deadline, wcet and prioriy
 
-% % PU1 
- T = [5, 10, .1, 1;   % Ts
-      10, 1, 2, 2;    % T1
-      15, 1, 2, 3;    % T2
-      20, 5, 3, 4;    % T3
+%PU1                  Task    Inchron Priorities
+ T = [5, 10, .1, 1;   % Ts    4
+      10, 1, 2, 2;    % T1    3
+      15, 1, 2, 3;    % T2    2
+      20, 5, 3, 4;    % T3    1
     ];
-
-% PU2
-%  T = [15, 10, 1, 3;  % t5  2
-%       10, 1, 3, 2;   % t6  3
-%       20, 1, 3, 4;   % t7  1
-%       10, 5, 2, 1;   % t8  4
-%     ];
-
-
-
 
 number_of_tasks = length(T(:,1));
 

@@ -93,7 +93,7 @@ Allthough PU3 has a time division multiplexing (TDM) its tasks will still be ana
 \end{table}%
 
 
-
+\pagebreak
 \subsection{ Response time analysis for the CAN bus messages}
 %• Response time analysis for the CAN bus messages
 
@@ -130,9 +130,25 @@ PU1 and PU2 are the only units within the system that are sending messages, show
 \end{table}%
 
 
+\pagebreak
 
 \section{Optimization for sensor-to-actuator delay}
 %• Optimisation for sensor-to-actuator delay (include troubleshooting)
+
+Now optimizing the sensor-to-actuator delay requires running the CrhonOpt tool within Inchron and setting up objectives for the real time requirements. That will be set to target: event-chain, which is set to be smaller or equal to 5ms.
+
+The initial priorities were selected according to period and execution time, shown in Figure \ref{fig:inchronprios} on the left, but when running the simulation to enhance the sensor to actuator delay, the tool changed the priorities in PU2, shown in Figure \ref{fig:inchronprios} on the right. This showed to be an improvement although this did not change the sensor to actuator delay.
+
+\begin{figure}[h!]
+	\begin{center}
+		\begin{tabular}{cc}
+		\includegraphics[width=0.5\linewidth]{img/inchron-prios} & \includegraphics[width=0.5\linewidth]{img/optimized}	\\
+		\end{tabular}
+		\caption{On the left, initial priorities used in the Matlab script and on the right the ChronOPT optimization of these parameters. }
+		\label{fig:inchronprios}
+	\end{center}
+\end{figure}
+
 
 
 
