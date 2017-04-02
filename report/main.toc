@@ -26,6 +26,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Part 2}{6}{chapter.2}
 \defcounter {refsection}{0}\relax 
+<<<<<<< HEAD
 \contentsline {section}{\numberline {2.1}Introduction}{6}{section.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Response Time analysis}{7}{section.2.2}
@@ -35,6 +36,23 @@
 \contentsline {subsection}{\numberline {2.2.2} Response time analysis for the CAN bus messages}{8}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Optimisation for sensor-to-actuator delay}{8}{section.2.3}
+=======
+\contentsline {subsubsection}{PU1}{5}{section*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{PU2}{5}{section*.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{PU3}{5}{section*.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2} Response time analysis for the CAN bus messages}{5}{subsection.2.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Optimisation for sensor-to-actuator delay}{7}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}System model}{7}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Design decision}{7}{section.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Results}{7}{section.2.6}
+>>>>>>> 86196fa481be3a3d810520c714bbb6ae99cf9473
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}System model}{8}{section.2.4}
 \defcounter {refsection}{0}\relax 
