@@ -1,32 +1,30 @@
-\BOOKMARK [0][-]{chapter*.2}{Introduction}{}% 1
-\BOOKMARK [0][-]{chapter.1}{Part 1}{}% 2
-\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.2}{Response Time analysis}{chapter.1}% 4
-\BOOKMARK [2][-]{subsection.1.2.1}{Fixed-Priority Non-Preemptive}{section.1.2}% 5
-\BOOKMARK [2][-]{subsection.1.2.2}{Fixed-Priority Preemptive}{section.1.2}% 6
-\BOOKMARK [2][-]{subsection.1.2.3}{Response time analysis per processing unit}{section.1.2}% 7
-\BOOKMARK [2][-]{subsection.1.2.4}{ Response time analysis for the CAN bus messages}{section.1.2}% 8
-\BOOKMARK [1][-]{section.1.3}{System Model Derivation and Control Parameter Design}{chapter.1}% 9
-\BOOKMARK [2][-]{subsection.1.3.1}{Controller Structure}{section.1.3}% 10
-\BOOKMARK [2][-]{subsection.1.3.2}{Controller Design}{section.1.3}% 11
-\BOOKMARK [1][-]{section.1.4}{Design decision}{chapter.1}% 12
-\BOOKMARK [1][-]{section.1.5}{Results}{chapter.1}% 13
-\BOOKMARK [0][-]{chapter.2}{Part 2}{}% 14
-\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.2}{Response Time analysis}{chapter.2}% 16
-\BOOKMARK [2][-]{subsection.2.2.1}{Response time analysis per processing unit}{section.2.2}% 17
-\BOOKMARK [2][-]{subsection.2.2.2}{ Response time analysis for the CAN bus messages}{section.2.2}% 18
-\BOOKMARK [1][-]{section.2.3}{Optimization for sensor-to-actuator delay}{chapter.2}% 19
-\BOOKMARK [1][-]{section.2.4}{System model}{chapter.2}% 20
-\BOOKMARK [1][-]{section.2.5}{Design decision}{chapter.2}% 21
-\BOOKMARK [1][-]{section.2.6}{Results}{chapter.2}% 22
-\BOOKMARK [1][-]{section.2.7}{Conclusions}{chapter.2}% 23
-\BOOKMARK [0][-]{chapter.3}{Part 3}{}% 24
-\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 25
-\BOOKMARK [1][-]{section.3.2}{Answer all the questions}{chapter.3}% 26
-\BOOKMARK [2][-]{subsection.3.2.1}{Theoretical analysis versus actual implementation}{section.3.2}% 27
-\BOOKMARK [1][-]{section.3.3}{Design decision}{chapter.3}% 28
-\BOOKMARK [1][-]{section.3.4}{Results}{chapter.3}% 29
-\BOOKMARK [1][-]{section.3.5}{Conclusions}{chapter.3}% 30
-\BOOKMARK [1][-]{section.3.6}{Results}{chapter.3}% 31
-\BOOKMARK [1][-]{section.3.7}{Conclusion}{chapter.3}% 32
+\BOOKMARK [0][-]{chapter.1}{Part 1}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Response Time analysis}{chapter.1}% 3
+\BOOKMARK [2][-]{subsection.1.2.1}{Fixed-Priority Non-Preemptive}{section.1.2}% 4
+\BOOKMARK [2][-]{subsection.1.2.2}{Fixed-Priority Preemptive}{section.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.2.3}{Response time analysis per processing unit}{section.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.2.4}{ Response time analysis for the CAN bus messages}{section.1.2}% 7
+\BOOKMARK [1][-]{section.1.3}{System Model Derivation and Control Parameter Design}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.3.1}{Controller Structure}{section.1.3}% 9
+\BOOKMARK [2][-]{subsection.1.3.2}{Controller Design}{section.1.3}% 10
+\BOOKMARK [1][-]{section.1.4}{Design decision}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.5}{Results}{chapter.1}% 12
+\BOOKMARK [0][-]{chapter.2}{Part 2}{}% 13
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.2}{Response Time analysis}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.1}{Response time analysis per processing unit}{section.2.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.2}{ Response time analysis for the CAN bus messages}{section.2.2}% 17
+\BOOKMARK [1][-]{section.2.3}{Optimization for sensor-to-actuator delay}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.4}{Design decision}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.5}{System model and Results}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.6}{Conclusions}{chapter.2}% 21
+\BOOKMARK [0][-]{chapter.3}{Part 3}{}% 22
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.2}{Answer all the questions}{chapter.3}% 24
+\BOOKMARK [2][-]{subsection.3.2.1}{Theoretical analysis versus actual implementation}{section.3.2}% 25
+\BOOKMARK [1][-]{section.3.3}{Design decision}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.4}{Results}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.5}{Conclusions}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.6}{Results}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.7}{Conclusion}{chapter.3}% 30

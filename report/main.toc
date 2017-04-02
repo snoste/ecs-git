@@ -1,72 +1,68 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Introduction}{2}{chapter*.2}
+\contentsline {chapter}{\numberline {1}Part 1}{2}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Part 1}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introduction}{2}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Introduction}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Response Time analysis}{2}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Response Time analysis}{3}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Fixed-Priority Non-Preemptive}{2}{subsection.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}Fixed-Priority Non-Preemptive}{3}{subsection.1.2.1}
+\contentsline {subsubsection}{BlockingTime}{2}{section*.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{BlockingTime}{3}{section*.3}
+\contentsline {subsubsection}{BusyPeriod}{2}{section*.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{BusyPeriod}{3}{section*.4}
+\contentsline {subsubsection}{ResponseTime}{2}{section*.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.2}Fixed-Priority Preemptive}{3}{subsection.1.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{ResponseTime}{3}{section*.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.2}Fixed-Priority Preemptive}{4}{subsection.1.2.2}
+\contentsline {subsubsection}{ResponseTime}{3}{section*.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{ResponseTime}{4}{section*.6}
+\contentsline {subsection}{\numberline {1.2.3}Response time analysis per processing unit}{3}{subsection.1.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{ResponseTime}{5}{section*.7}
+\contentsline {subsection}{\numberline {1.2.4} Response time analysis for the CAN bus messages}{3}{subsection.1.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.3}Response time analysis per processing unit}{5}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.3}System Model Derivation and Control Parameter Design}{3}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.4} Response time analysis for the CAN bus messages}{5}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.3.1}Controller Structure}{4}{subsection.1.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}System Model Derivation and Control Parameter Design}{5}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.2}Controller Design}{5}{subsection.1.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.1}Controller Structure}{6}{subsection.1.3.1}
+\contentsline {section}{\numberline {1.4}Design decision}{6}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}Controller Design}{6}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.5}Results}{6}{section.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Design decision}{7}{section.1.4}
+\contentsline {chapter}{\numberline {2}Part 2}{7}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Results}{7}{section.1.5}
+\contentsline {section}{\numberline {2.1}Introduction}{7}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Part 2}{8}{chapter.2}
+\contentsline {section}{\numberline {2.2}Response Time analysis}{7}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Introduction}{8}{section.2.1}
+\contentsline {subsection}{\numberline {2.2.1}Response time analysis per processing unit}{7}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Response Time analysis}{8}{section.2.2}
+\contentsline {subsubsection}{PU1}{8}{section*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Response time analysis per processing unit}{8}{subsection.2.2.1}
+\contentsline {subsubsection}{PU2}{8}{section*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{PU1}{9}{section*.8}
+\contentsline {subsubsection}{PU3}{9}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{PU2}{9}{section*.9}
+\contentsline {subsection}{\numberline {2.2.2} Response time analysis for the CAN bus messages}{9}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{PU3}{10}{section*.10}
+\contentsline {section}{\numberline {2.3}Optimization for sensor-to-actuator delay}{9}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2} Response time analysis for the CAN bus messages}{11}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.4}Design decision}{11}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Optimization for sensor-to-actuator delay}{12}{section.2.3}
+\contentsline {section}{\numberline {2.5}System model and Results}{11}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}System model}{12}{section.2.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Design decision}{12}{section.2.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Results}{12}{section.2.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Conclusions}{12}{section.2.7}
+\contentsline {section}{\numberline {2.6}Conclusions}{11}{section.2.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Part 3}{13}{chapter.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Introduction}{13}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Answer all the questions}{14}{section.3.2}
+\contentsline {section}{\numberline {3.2}Answer all the questions}{13}{section.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}Theoretical analysis versus actual implementation}{14}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 

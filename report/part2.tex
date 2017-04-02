@@ -93,7 +93,6 @@ Allthough PU3 has a time division multiplexing (TDM) its tasks will still be ana
 \end{table}%
 
 
-\pagebreak
 \subsection{ Response time analysis for the CAN bus messages}
 %• Response time analysis for the CAN bus messages
 
@@ -130,8 +129,6 @@ PU1 and PU2 are the only units within the system that are sending messages, show
 \end{table}%
 
 
-\pagebreak
-
 \section{Optimization for sensor-to-actuator delay}
 %• Optimisation for sensor-to-actuator delay (include troubleshooting)
 
@@ -150,23 +147,34 @@ The initial priorities were selected according to period and execution time, sho
 \end{figure}
 
 
-
-
-\section{System model}
-%• System model derivation, design space exploration and controller
-%parameter design
-
 \section{Design decision}
-%• Your design decision and justification.
+Design decision are used from Part 1, seen in Section 1.4. To satisfy the design decision made in Part 1 saying that the sensor to actuator delay should be 8.1 ms as mentioned in Section 1.4 as well, some changes have to be made to the Inchron project. Without any changes to the project the Sensor to actuator delay will be 12 ms seen in Figure \ref{fig:CANoriginal}, as well notice the blue are which is 4.9 ms which should be 1 ms. So what we did was add a offset of 4.9 ms - 1 ms = 3.9 ms to the $T_1$ task. This allows the model to act correctly and show the correct sensor to actuator delay of 8.1 ms and also lowering the sampling period to 10 ms.
 
 
-
-\section{Results}
+\section{System model and Results}
 %• Results
 %− Response time analysis
 
-Firstly: Response time analysis\\
-Secondly: Plots from chronVIEW (before and after optimization)\\
+Firstly: The Response time analysis for each of the Processing units was performed in  Inchron and the timings match the timings obtained from the Matlab model as seen in Table \ref{tab:pu12} as for the CAN messages, seen in Table \ref{tab:can-rts}. Secondly: Plots from chronVIEW (before and after optimization)\\
 Last: Control system input and output
 
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.8\linewidth]{img/CAN-original}
+		\caption{The first 20ms (equal to largest period) of the \textbf{optimized state diagram} for the CAN model. Showing the sensor to actuator delay and the wrong message time of $m_1$ }
+		\label{fig:CANoriginal}
+	\end{center}
+\end{figure}
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.8\linewidth]{img/CAN-Optimized}
+		\caption{The first 20ms (equal to largest period) of the \textbf{non optimized state diagram} for the CAN model.}
+		\label{fig:CANoptimized}
+	\end{center}
+\end{figure}
+
 \section{Conclusions}
+
+To conclude, the theoretical/Matlab analysis goes hand in hand with the Inchron modeling when used correctly. The tool is very powerful and can count for all design decision made in Part 1. The tool allows for a broad overview of the complicated system as well as troubleshooting more difficult sections of the analysis to maximize the performance of the CAN bus according to the theoretical analysis.
+
