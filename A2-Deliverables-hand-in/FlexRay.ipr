@@ -1,0 +1,891 @@
+<?xml version='1.0' ?>
+<cs2:chronsimproject xmlns:cs2="http://www.inchron.com/inchron-2.8.0.xsd" xsi:schemaLocation="http://www.inchron.com/inchron-2.8.0.xsd" version="2.0" uuid="{9deff3d9-decb-430a-bfa8-663a87b62989}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+   <general>
+      <dir>C:\Users\s168877</dir>
+      <sourceipr>C:\Users\snorr\Documents\GitHub\ecs-git\A2-Deliverables-hand-in\CAN-correct-analyse.ipr</sourceipr>
+      <savedir>C:\Users\snorr\Documents\GitHub\ecs-git\A2-Deliverables-hand-in</savedir>
+      <name>PU12</name>
+      <version></version>
+      <description>
+         <comment></comment>
+         <creation>2017-03-25T14:45:24</creation>
+         <modification>2017-03-31T13:30:08</modification>
+      </description>
+      <last-modified>2017-03-31T15:46:38</last-modified>
+      <author></author>
+      <email></email>
+      <creator build="20170201A" version="2.8.0" />
+      <omitdiagrams stack="false" callnesting="false" impliciteventchains="false" />
+   </general>
+   <specification>
+      <specsettings>
+         <includepath>$INSTALL\lib</includepath>
+         <options cc="none" rtos="none" warn="1" additionalcflags="" std="ISO C99" PrependSpecSettingsFlag="0" />
+      </specsettings>
+      <autosar>
+         <rootcomposition uid="|P:PU12|ASWCI:Autosar Application Instance" name="Autosar Application Instance" />
+      </autosar>
+   </specification>
+   <allocation exactness="50" >
+      <resourcetype library="$INSTALL\models\generic.ism" type="generic" name="PU1" >
+         <clock period="1 ns" />
+         <rtos>
+            <processes exclusive="false" preemptFlag="true" exactness="50" xcoreisrs="false" isrFlag="true" maximum="99" />
+            <stack default="1024" />
+            <scheduler strategy="Priority" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" propagatedPriorities="false" order="0" coreaffinity="0" priority="1" type="preemptive" jitter="0 us" wcet="0 us" uuid="{ec6836a4-792e-4dce-adfb-f8b1fec72890}" allowed_types="4294967295" timeslice="10 ms" name="ISRScheduler" slot="0 us" bcet="0 us" >
+               <description>
+                  <comment></comment>
+                  <creation>2017-03-25T14:46:38</creation>
+                  <modification>2017-03-25T14:46:38</modification>
+               </description>
+               <scheduler strategy="Priority" offset="0 us" cycle="0 us" allowed_strategies="16415" inversepriority="false" period="0 us" blockingtime="0 us" propagatedPriorities="false" order="0" coreaffinity="0" priority="0" type="preemptive" jitter="0 us" wcet="0 us" uuid="{ad02a68e-e8f8-453b-9de6-bf0c18666fdc}" allowed_types="4294967295" timeslice="10 ms" name="DefaultScheduler" slot="0 us" bcet="0 us" >
+                  <description>
+                     <comment></comment>
+                     <creation>2017-03-25T14:47:11</creation>
+                     <modification>2017-03-25T14:47:11</modification>
+                  </description>
+                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="T3" preemptable="1" resource="" stack_limit="1024" init="0" >
+                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="1" extendedtask="0" jitter="0 us" wcet="3 ms" uuid="{95889867-ec89-4ad3-8810-95f84ac7da01}" name="|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:T3" slot="0 us" bcet="3 ms" >
+                        <description>
+                           <comment></comment>
+                           <creation>2017-03-25T15:02:30</creation>
+                           <modification>2017-03-25T15:02:30</modification>
+                        </description>
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="1.5 ms" />
+                     </instance>
+                  </process>
+                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="T2" preemptable="1" resource="" stack_limit="1024" init="0" >
+                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="2" extendedtask="0" jitter="0 us" wcet="2 ms" uuid="{ef586668-e587-4dc8-b307-ca13187d9872}" name="|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:T2" slot="0 us" bcet="2 ms" >
+                        <description>
+                           <comment></comment>
+                           <creation>2017-03-25T14:49:26</creation>
+                           <modification>2017-03-25T14:49:26</modification>
+                        </description>
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="1 ms" />
+                     </instance>
+                  </process>
+                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="T1" preemptable="1" resource="" stack_limit="1024" init="0" >
+                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="3" extendedtask="0" jitter="0 us" wcet="2 ms" uuid="{07a2ae5b-7b0d-44c6-91d5-d70d1af1bcd3}" name="|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:T1" slot="0 us" bcet="2 ms" >
+                        <description>
+                           <comment></comment>
+                           <creation>2017-03-25T15:08:27</creation>
+                           <modification>2017-03-25T15:08:27</modification>
+                        </description>
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="1 ms" />
+                     </instance>
+                  </process>
+                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="Ts" preemptable="1" resource="" stack_limit="1024" init="0" >
+                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="4" extendedtask="0" jitter="0 us" wcet="100 us" uuid="{f99aa4ca-acf0-4b5e-96ff-8b2ff3179ed2}" name="|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:Ts" slot="0 us" bcet="100 us" >
+                        <description>
+                           <comment></comment>
+                           <creation>2017-03-25T14:47:28</creation>
+                           <modification>2017-03-25T14:47:28</modification>
+                        </description>
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="50 us" />
+                     </instance>
+                  </process>
+               </scheduler>
+            </scheduler>
+         </rtos>
+         <compiler path="" optimization="0" type="" />
+         <instance uuid="{1bb81a02-ecfa-4071-9475-3c60333ce8ea}" name="PU1" >
+            <description>
+               <comment></comment>
+               <creation>2017-03-25T14:46:38</creation>
+               <modification>2017-03-31T13:18:47</modification>
+               <targetcpu></targetcpu>
+            </description>
+            <ipcobjects/>
+            <triggermodel>
+               <tokens/>
+            </triggermodel>
+            <references/>
+            <peripheral base="0x64" fabric="8" bufferstrategy="SlotOrder" uuid="{03a6adea-3962-4c64-8cd0-a59ebdd831b2}" name="Cp1" >
+               <description>
+                  <comment></comment>
+                  <creation>2017-03-25T15:43:05</creation>
+                  <modification>2017-03-25T15:43:05</modification>
+                  <targetperipheral></targetperipheral>
+               </description>
+               <scheduler strategy="CAN" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" propagatedPriorities="false" order="0" coreaffinity="0" priority="1" type="run-to-completi" jitter="0 us" wcet="0 us" uuid="{ebc9d534-923c-4764-ba46-e04eba3dc4ef}" allowed_types="4294967295" timeslice="10 ms" name="CANMessages" slot="0 us" bcet="0 us" >
+                  <description>
+                     <comment></comment>
+                     <creation>2017-03-25T15:43:05</creation>
+                     <modification>2017-03-25T15:43:05</modification>
+                  </description>
+                  <busmessage offset="0 us" cycle="0 us" size="8" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" format="Standard" propagatedPriorities="false" order="0" coreaffinity="0" priority="0" id="0" jitter="0 us" wcet="999.999945 us" uuid="{8a594f2c-b82b-4a2e-9444-222b282d629a}" name="M1" allowed_types="4294967295" timeslice="10 ms" slot="0 us" bcet="822.222177 us" >
+                     <description>
+                        <comment></comment>
+                        <creation>2017-03-26T10:24:22</creation>
+                        <modification>2017-03-26T10:24:22</modification>
+                     </description>
+                     <events>
+                        <event type="4" >start</event>
+                        <event type="4" >stop</event>
+                     </events>
+                  </busmessage>
+                  <busmessage offset="0 us" cycle="0 us" size="8" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" format="Standard" propagatedPriorities="false" order="0" coreaffinity="0" priority="0" id="1" jitter="0 us" wcet="999.999945 us" uuid="{32298307-387d-4f12-a714-9823e4d573c4}" name="M3" allowed_types="4294967295" timeslice="10 ms" slot="0 us" bcet="822.222177 us" >
+                     <description>
+                        <comment></comment>
+                        <creation>2017-03-26T10:34:03</creation>
+                        <modification>2017-03-26T10:34:03</modification>
+                     </description>
+                     <events>
+                        <event type="4" >start</event>
+                        <event type="4" >stop</event>
+                     </events>
+                  </busmessage>
+                  <busmessage offset="0 us" cycle="0 us" size="8" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" format="Standard" propagatedPriorities="false" order="0" coreaffinity="0" priority="0" id="2" jitter="0 us" wcet="999.999945 us" uuid="{074b2ccf-666c-46d1-9e1f-37bcb3fb7740}" name="Ms" allowed_types="4294967295" timeslice="10 ms" slot="0 us" bcet="822.222177 us" >
+                     <description>
+                        <comment></comment>
+                        <creation>2017-03-26T10:08:47</creation>
+                        <modification>2017-03-26T10:08:47</modification>
+                     </description>
+                     <events>
+                        <event type="4" >start</event>
+                        <event type="4" >stop</event>
+                     </events>
+                  </busmessage>
+               </scheduler>
+            </peripheral>
+            <segmentmap uuid="{c4b5c3c4-99ff-42ab-a779-078590e63c2d}" >
+               <description>
+                  <comment></comment>
+                  <creation>2017-03-25T14:46:38</creation>
+                  <modification>2017-03-25T14:46:38</modification>
+               </description>
+               <segment flags="0x122" base="0x1000000" size="0x0" sections="data:bss:.bss:stack:heap" pages="1" name="ram" />
+               <segment flags="0x113" base="0x2000000" size="0x0" sections="text" pages="1" name="rom" />
+            </segmentmap>
+            <clock gran_unit="ns" range_value="1" start_unit="us" gran_value="1" drift_value="0" range_unit="s" id="|P:PU12|RI:PU1|Clk:PU1" uuid="{c097fe65-5384-4c30-ac8f-9d48b0311b4b}" start_value="0" >
+               <description>
+                  <comment></comment>
+                  <creation>2017-03-25T14:46:38</creation>
+                  <modification>2017-03-25T15:18:07</modification>
+               </description>
+               <start firstMax="0 us" firstMin="0 us" first="0 us" randomStart="false" />
+            </clock>
+            <specsettings>
+               <options cc="none" rtos="none" warn="1" additionalcflags="" std="ISO C99" PrependSpecSettingsFlag="0" />
+            </specsettings>
+         </instance>
+      </resourcetype>
+      <resourcetype library="$INSTALL\models\generic.ism" type="generic" name="PU2" >
+         <clock period="1 ns" />
+         <rtos>
+            <processes exclusive="false" preemptFlag="true" exactness="50" xcoreisrs="false" isrFlag="true" maximum="99" />
+            <stack default="1024" />
+            <scheduler strategy="Priority" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" propagatedPriorities="false" order="0" coreaffinity="0" priority="1" type="preemptive" jitter="0 us" wcet="0 us" uuid="{ca2d2dc7-053b-418d-806e-c2467ac0557e}" allowed_types="4294967295" timeslice="10 ms" name="ISRScheduler" slot="0 us" bcet="0 us" >
+               <description>
+                  <comment></comment>
+                  <creation>2017-03-25T15:17:57</creation>
+                  <modification>2017-03-25T15:17:57</modification>
+               </description>
+               <scheduler strategy="Priority" offset="0 us" cycle="0 us" allowed_strategies="16415" inversepriority="false" period="0 us" blockingtime="0 us" propagatedPriorities="false" order="0" coreaffinity="0" priority="0" type="preemptive" jitter="0 us" wcet="0 us" uuid="{6c4d7415-a038-4c06-a812-f0a3f9e0f267}" allowed_types="4294967295" timeslice="10 ms" name="DefaultScheduler" slot="0 us" bcet="0 us" >
+                  <description>
+                     <comment></comment>
+                     <creation>2017-03-25T15:20:37</creation>
+                     <modification>2017-03-25T15:20:37</modification>
+                  </description>
+                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="T6" preemptable="1" resource="" stack_limit="1024" init="0" >
+                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="1" extendedtask="0" jitter="0 us" wcet="3 ms" uuid="{b7a0571b-d18a-4d7b-a655-55e86527ba57}" name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T6" slot="0 us" bcet="3 ms" >
+                        <description>
+                           <comment></comment>
+                           <creation>2017-03-25T15:18:22</creation>
+                           <modification>2017-03-25T15:18:22</modification>
+                        </description>
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="1.5 ms" />
+                     </instance>
+                  </process>
+                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="T7" preemptable="1" resource="" stack_limit="1024" init="0" >
+                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="2" extendedtask="0" jitter="0 us" wcet="3 ms" uuid="{f3ffc78b-52da-41f9-b2cc-637680ec9638}" name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T7" slot="0 us" bcet="3 ms" >
+                        <description>
+                           <comment></comment>
+                           <creation>2017-03-25T15:18:34</creation>
+                           <modification>2017-03-25T15:18:34</modification>
+                        </description>
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="1.5 ms" />
+                     </instance>
+                  </process>
+                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="T8" preemptable="1" resource="" stack_limit="1024" init="0" >
+                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="3" extendedtask="0" jitter="0 us" wcet="2 ms" uuid="{842d8e2c-ecc1-49d3-a2fc-296f8b6f2c13}" name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T8" slot="0 us" bcet="2 ms" >
+                        <description>
+                           <comment></comment>
+                           <creation>2017-03-25T15:18:28</creation>
+                           <modification>2017-03-25T15:18:28</modification>
+                        </description>
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="1.5 ms" />
+                     </instance>
+                  </process>
+                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="T5" preemptable="1" resource="" stack_limit="1024" init="0" >
+                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="4" extendedtask="0" jitter="0 us" wcet="1 ms" uuid="{4ce727ac-f228-4aeb-a1a3-70799634dfed}" name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T5" slot="0 us" bcet="1 ms" >
+                        <description>
+                           <comment></comment>
+                           <creation>2017-03-25T15:18:31</creation>
+                           <modification>2017-03-25T15:18:31</modification>
+                        </description>
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="500 us" />
+                     </instance>
+                  </process>
+               </scheduler>
+            </scheduler>
+         </rtos>
+         <compiler path="" optimization="0" type="" />
+         <instance uuid="{f95487de-e3ae-4285-baae-ca19a8125a43}" name="PU2" >
+            <description>
+               <comment></comment>
+               <creation>2017-03-25T15:17:57</creation>
+               <modification>2017-03-31T13:18:47</modification>
+               <targetcpu></targetcpu>
+            </description>
+            <ipcobjects/>
+            <triggermodel>
+               <tokens/>
+            </triggermodel>
+            <references/>
+            <peripheral base="0x12c" fabric="8" bufferstrategy="SlotOrder" uuid="{8ca48526-bffc-4b63-9127-5e81aa4ec530}" name="c3" >
+               <description>
+                  <comment></comment>
+                  <creation>2017-03-26T10:31:32</creation>
+                  <modification>2017-03-26T10:31:32</modification>
+                  <targetperipheral></targetperipheral>
+               </description>
+               <scheduler strategy="CAN" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" propagatedPriorities="false" order="0" coreaffinity="0" priority="1" type="run-to-completi" jitter="0 us" wcet="0 us" uuid="{5bf9535a-f15f-4d17-82ef-be03a30c3aad}" allowed_types="4294967295" timeslice="10 ms" name="CANMessages" slot="0 us" bcet="0 us" >
+                  <description>
+                     <comment></comment>
+                     <creation>2017-03-26T10:31:32</creation>
+                     <modification>2017-03-26T10:31:32</modification>
+                  </description>
+                  <busmessage offset="0 us" cycle="0 us" size="8" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" format="Standard" propagatedPriorities="false" order="0" coreaffinity="0" priority="6291456" id="3" jitter="0 us" wcet="999.999945 us" uuid="{deefa316-7d73-411b-a31c-7c2f481f3900}" name="M8" allowed_types="4294967295" timeslice="10 ms" slot="0 us" bcet="822.222177 us" >
+                     <description>
+                        <comment></comment>
+                        <creation>2017-03-26T10:37:13</creation>
+                        <modification>2017-03-26T10:37:13</modification>
+                     </description>
+                     <events>
+                        <event type="4" >start</event>
+                        <event type="4" >stop</event>
+                     </events>
+                  </busmessage>
+               </scheduler>
+            </peripheral>
+            <segmentmap uuid="{4969b9c0-5d7a-41bd-a919-fd976429bdb2}" >
+               <description>
+                  <comment></comment>
+                  <creation>2017-03-25T15:17:57</creation>
+                  <modification>2017-03-25T15:17:57</modification>
+               </description>
+               <segment flags="0x122" base="0x1000000" size="0x0" sections="data:bss:.bss:stack:heap" pages="1" name="ram" />
+               <segment flags="0x113" base="0x2000000" size="0x0" sections="text" pages="1" name="rom" />
+            </segmentmap>
+            <clock gran_unit="ns" range_value="1" start_unit="us" gran_value="1" drift_value="0" range_unit="s" id="|P:PU12|RI:PU2|Clk:PU2" uuid="{5135c797-e960-48a7-860c-d29c131f290c}" start_value="0" >
+               <description>
+                  <comment></comment>
+                  <creation>2017-03-25T15:17:57</creation>
+                  <modification>2017-03-25T15:18:17</modification>
+               </description>
+               <start firstMax="0 us" firstMin="0 us" first="0 us" randomStart="false" />
+            </clock>
+            <specsettings>
+               <options cc="none" rtos="none" warn="1" additionalcflags="" std="ISO C99" PrependSpecSettingsFlag="0" />
+            </specsettings>
+         </instance>
+      </resourcetype>
+      <resourcetype library="$INSTALL\models\generic.ism" type="generic" name="PU3" >
+         <clock period="1 ns" />
+         <rtos>
+            <processes exclusive="false" preemptFlag="true" exactness="50" xcoreisrs="false" isrFlag="true" maximum="99" />
+            <stack default="1024" />
+            <scheduler strategy="Priority" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" propagatedPriorities="false" order="0" coreaffinity="0" priority="1" type="preemptive" jitter="0 us" wcet="0 us" uuid="{3d979e53-6d3f-4ee5-b0c2-5bb1d4df186d}" allowed_types="4294967295" timeslice="10 ms" name="ISRScheduler" slot="0 us" bcet="0 us" >
+               <description>
+                  <comment></comment>
+                  <creation>2017-03-26T09:59:17</creation>
+                  <modification>2017-03-26T09:59:17</modification>
+               </description>
+               <scheduler strategy="TDMA" offset="0 us" cycle="10 ms" allowed_strategies="16415" inversepriority="false" period="0 us" blockingtime="0 us" propagatedPriorities="true" order="0" coreaffinity="0" priority="0" type="preemptive" jitter="0 us" wcet="0 us" uuid="{a15d3ebe-75f6-481e-8feb-e9d6f2700a58}" allowed_types="4294967295" timeslice="10 ms" name="DefaultScheduler" tdmaperiod="10 ms" slot="0 us" bcet="0 us" >
+                  <description>
+                     <comment></comment>
+                     <creation>2017-03-26T10:16:33</creation>
+                     <modification>2017-03-26T10:16:33</modification>
+                  </description>
+                  <scheduletable>
+                     <schedulable order="0" uid="|P:PU12|RI:PU3|SI:ISRScheduler|SI:DefaultScheduler|SI:S1" slot="2.5 ms" />
+                     <schedulable order="1" uid="|P:PU12|RI:PU3|SI:ISRScheduler|SI:DefaultScheduler|SI:T4" slot="2.5 ms" />
+                     <schedulable order="2" uid="|P:PU12|RI:PU3|SI:ISRScheduler|SI:DefaultScheduler|SI:Tca" slot="2.5 ms" />
+                     <schedulable order="3" uid="|P:PU12|RI:PU3|SI:ISRScheduler|SI:DefaultScheduler|SI:S4" slot="2.5 ms" />
+                  </scheduletable>
+                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="S1" preemptable="1" resource="" stack_limit="1024" init="0" >
+                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="0" extendedtask="0" jitter="0 us" wcet="0 us" uuid="{b28bf532-bf0e-45c0-b8ad-5a95ca7c2e44}" name="|P:PU12|RI:PU3|SI:ISRScheduler|SI:DefaultScheduler|SI:S1" slot="0 us" bcet="0 us" >
+                        <description>
+                           <comment></comment>
+                           <creation>2017-03-26T09:59:49</creation>
+                           <modification>2017-03-26T09:59:49</modification>
+                        </description>
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="0 us" />
+                     </instance>
+                  </process>
+                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="S4" preemptable="1" resource="" stack_limit="1024" init="0" >
+                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="0" extendedtask="0" jitter="0 us" wcet="0 us" uuid="{d2753dfd-0723-4a99-8640-b7da56d70154}" name="|P:PU12|RI:PU3|SI:ISRScheduler|SI:DefaultScheduler|SI:S4" slot="0 us" bcet="0 us" >
+                        <description>
+                           <comment></comment>
+                           <creation>2017-03-26T10:04:18</creation>
+                           <modification>2017-03-26T10:04:18</modification>
+                        </description>
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="0 us" />
+                     </instance>
+                  </process>
+                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="T4" preemptable="1" resource="" stack_limit="1024" init="0" >
+                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="0" extendedtask="0" jitter="0 us" wcet="1 ms" uuid="{7b91388d-c427-42c6-8ea4-d00e4fa045a5}" name="|P:PU12|RI:PU3|SI:ISRScheduler|SI:DefaultScheduler|SI:T4" slot="0 us" bcet="1 ms" >
+                        <description>
+                           <comment></comment>
+                           <creation>2017-03-26T10:03:46</creation>
+                           <modification>2017-03-26T10:03:46</modification>
+                        </description>
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="500 us" />
+                     </instance>
+                  </process>
+                  <process syncevents="" activations="1" isr="0" xcoreisr="" idletask="0" name="Tca" preemptable="1" resource="" stack_limit="1024" init="0" >
+                     <instance offset="0 us" cycle="0 us" period="0 us" blockingtime="0 us" scheduleafterrunnable="0" order="0" coreaffinity="1" priority="0" extendedtask="0" jitter="0 us" wcet="2 ms" uuid="{0e643798-1569-414b-b775-ae87e76a6ba9}" name="|P:PU12|RI:PU3|SI:ISRScheduler|SI:DefaultScheduler|SI:Tca" slot="0 us" bcet="2 ms" >
+                        <description>
+                           <comment></comment>
+                           <creation>2017-03-26T10:03:28</creation>
+                           <modification>2017-03-26T10:03:28</modification>
+                        </description>
+                        <simulationreplacement loadtype="Wcet" mean="0 us" sigma="1 ms" />
+                     </instance>
+                  </process>
+               </scheduler>
+            </scheduler>
+         </rtos>
+         <compiler path="" optimization="0" type="" />
+         <instance uuid="{9e77f2c0-c3ed-4be5-8297-fbba0b54f0c8}" name="PU3" >
+            <description>
+               <comment></comment>
+               <creation>2017-03-26T09:59:17</creation>
+               <modification>2017-03-31T13:18:47</modification>
+               <targetcpu></targetcpu>
+            </description>
+            <ipcobjects/>
+            <triggermodel>
+               <tokens/>
+            </triggermodel>
+            <references/>
+            <peripheral base="0xc8" fabric="8" bufferstrategy="SlotOrder" uuid="{14034e83-3dd6-41b2-97c9-8648e7336ccb}" name="c2" >
+               <description>
+                  <comment></comment>
+                  <creation>2017-03-26T10:07:00</creation>
+                  <modification>2017-03-26T10:07:00</modification>
+                  <targetperipheral></targetperipheral>
+               </description>
+               <scheduler strategy="CAN" offset="0 us" cycle="0 us" allowed_strategies="4294967295" inversepriority="false" period="0 us" blockingtime="0 us" propagatedPriorities="false" order="0" coreaffinity="0" priority="1" type="run-to-completi" jitter="0 us" wcet="0 us" uuid="{d7820c3e-2b37-40a8-bd30-24b4436f2dda}" allowed_types="4294967295" timeslice="10 ms" name="CANMessages" slot="0 us" bcet="0 us" >
+                  <description>
+                     <comment></comment>
+                     <creation>2017-03-26T10:07:00</creation>
+                     <modification>2017-03-26T10:07:00</modification>
+                  </description>
+               </scheduler>
+            </peripheral>
+            <segmentmap uuid="{90a8afaa-8b0f-4168-ae7f-c374903d67f5}" >
+               <description>
+                  <comment></comment>
+                  <creation>2017-03-26T09:59:17</creation>
+                  <modification>2017-03-26T09:59:17</modification>
+               </description>
+               <segment flags="0x122" base="0x1000000" size="0x0" sections="data:bss:.bss:stack:heap" pages="1" name="ram" />
+               <segment flags="0x113" base="0x2000000" size="0x0" sections="text" pages="1" name="rom" />
+            </segmentmap>
+            <clock gran_unit="ns" range_value="1" start_unit="us" gran_value="1" drift_value="0" range_unit="s" id="|P:PU12|RI:PU3|Clk:PU3" uuid="{70838db8-5c57-4c65-a7c9-2eb253d213ef}" start_value="0" >
+               <description>
+                  <comment></comment>
+                  <creation>2017-03-26T09:59:17</creation>
+                  <modification>2017-03-26T09:59:34</modification>
+               </description>
+               <start firstMax="0 us" firstMin="0 us" first="0 us" randomStart="false" />
+            </clock>
+            <specsettings>
+               <options cc="none" rtos="none" warn="1" additionalcflags="" std="ISO C99" PrependSpecSettingsFlag="0" />
+            </specsettings>
+         </instance>
+      </resourcetype>
+      <peripheral speed="135000" base="0x0" fabric="10" logEnabled="false" uuid="{935b66e7-fbdc-4a64-8507-cd6a37ce53fd}" name="c1" >
+         <description>
+            <comment></comment>
+            <creation>2017-03-25T15:58:05</creation>
+            <modification>2017-03-25T15:58:05</modification>
+            <targetperipheral></targetperipheral>
+         </description>
+      </peripheral>
+   </allocation>
+   <mapping>
+      <map>
+         <source>|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:T3</source>
+         <target>|P:PU12|RI:PU1</target>
+      </map>
+      <map>
+         <source>|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:T2</source>
+         <target>|P:PU12|RI:PU1</target>
+      </map>
+      <map>
+         <source>|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:T1</source>
+         <target>|P:PU12|RI:PU1</target>
+      </map>
+      <map>
+         <source>|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:Ts</source>
+         <target>|P:PU12|RI:PU1</target>
+      </map>
+      <map>
+         <source>|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T6</source>
+         <target>|P:PU12|RI:PU2</target>
+      </map>
+      <map>
+         <source>|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T7</source>
+         <target>|P:PU12|RI:PU2</target>
+      </map>
+      <map>
+         <source>|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T8</source>
+         <target>|P:PU12|RI:PU2</target>
+      </map>
+      <map>
+         <source>|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T5</source>
+         <target>|P:PU12|RI:PU2</target>
+      </map>
+      <map>
+         <source>|P:PU12|RI:PU3|SI:ISRScheduler|SI:DefaultScheduler|SI:S1</source>
+         <target>|P:PU12|RI:PU3</target>
+      </map>
+      <map>
+         <source>|P:PU12|RI:PU3|SI:ISRScheduler|SI:DefaultScheduler|SI:S4</source>
+         <target>|P:PU12|RI:PU3</target>
+      </map>
+      <map>
+         <source>|P:PU12|RI:PU3|SI:ISRScheduler|SI:DefaultScheduler|SI:T4</source>
+         <target>|P:PU12|RI:PU3</target>
+      </map>
+      <map>
+         <source>|P:PU12|RI:PU3|SI:ISRScheduler|SI:DefaultScheduler|SI:Tca</source>
+         <target>|P:PU12|RI:PU3</target>
+      </map>
+      <connection>
+         <target>|P:PU12|Prp:c1|Prt:CAN-</target>
+         <connect>|P:PU12|RI:PU1|Prp:Cp1|Prt:CAN-BUS-0</connect>
+         <connect>|P:PU12|RI:PU3|Prp:c2|Prt:CAN-BUS-0</connect>
+         <connect>|P:PU12|RI:PU2|Prp:c3|Prt:CAN-BUS-0</connect>
+      </connection>
+   </mapping>
+   <components/>
+   <estimationoverride/>
+   <clockcounter/>
+   <stimulation>
+      <scenario uuid="{37c87877-105d-4d4e-a952-8b5b3220f087}" name="s1" default="false" >
+         <description>
+            <comment></comment>
+            <creation>2017-03-25T14:52:44</creation>
+            <modification>2017-03-25T15:02:24</modification>
+         </description>
+         <description></description>
+         <generator clock="|P:PU12|RI:PU1|Clk:PU1" type="peripheral" uuid="{21aa1645-0b6f-4df9-8cb3-2dd6988ea19b}" id="3" >
+            <process name="|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:T1" />
+            <time period="10 ms" periodic="1" iterations="0" first="0 us" relative="false" />
+            <random param1="0 us" param2="0 us" type="None" param3="0 us" param4="0 us" />
+            <limitation minSeparationTime="0 us" />
+            <description>
+               <comment></comment>
+               <creation>2017-03-25T15:10:20</creation>
+               <modification>2017-03-31T13:18:47</modification>
+            </description>
+            <loss probability="0" />
+         </generator>
+         <generator clock="|P:PU12|RI:PU1|Clk:PU1" type="peripheral" uuid="{643b2be1-7ca8-4f35-a3a5-12708bc61ca5}" id="2" >
+            <process name="|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:T2" />
+            <time period="15 ms" periodic="1" iterations="0" first="0 us" relative="false" />
+            <random param1="0 us" param2="0 us" type="None" param3="0 us" param4="0 us" />
+            <limitation minSeparationTime="0 us" />
+            <description>
+               <comment></comment>
+               <creation>2017-03-25T15:01:54</creation>
+               <modification>2017-03-31T13:18:47</modification>
+            </description>
+            <loss probability="0" />
+         </generator>
+         <generator clock="|P:PU12|RI:PU1|Clk:PU1" type="peripheral" uuid="{d666f60d-bca4-4bda-bac3-9175135e8fb6}" id="4" >
+            <process name="|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:T3" />
+            <time period="20 ms" periodic="1" iterations="0" first="0 us" relative="false" />
+            <random param1="0 us" param2="0 us" type="None" param3="0 us" param4="0 us" />
+            <limitation minSeparationTime="0 us" />
+            <description>
+               <comment></comment>
+               <creation>2017-03-25T15:10:37</creation>
+               <modification>2017-03-31T13:18:47</modification>
+            </description>
+            <loss probability="0" />
+         </generator>
+         <generator clock="|P:PU12|RI:PU1|Clk:PU1" type="peripheral" uuid="{2e902710-2ee0-4da3-888e-3bd3b182560a}" id="1" >
+            <process name="|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:Ts" />
+            <time period="5 ms" periodic="1" iterations="0" first="0 us" relative="false" />
+            <random param1="0 us" param2="0 us" type="None" param3="0 us" param4="0 us" />
+            <limitation minSeparationTime="0 us" />
+            <description>
+               <comment></comment>
+               <creation>2017-03-25T15:01:23</creation>
+               <modification>2017-03-31T13:18:47</modification>
+            </description>
+            <loss probability="0" />
+         </generator>
+      </scenario>
+      <scenario uuid="{90eab004-86b1-464c-8d77-31078df03cbd}" name="S2" default="false" >
+         <description>
+            <comment></comment>
+            <creation>2017-03-25T15:24:11</creation>
+            <modification>2017-03-25T15:27:19</modification>
+         </description>
+         <description></description>
+         <generator clock="|P:PU12|RI:PU2|Clk:PU2" type="peripheral" uuid="{077b234a-d376-4134-aaf5-7d21ad494b1b}" id="1" >
+            <process name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T5" />
+            <time period="15 ms" periodic="1" iterations="0" first="0 us" relative="false" />
+            <random param1="0 us" param2="0 us" type="None" param3="0 us" param4="0 us" />
+            <limitation minSeparationTime="0 us" />
+            <description>
+               <comment></comment>
+               <creation>2017-03-25T15:24:13</creation>
+               <modification>2017-03-31T13:18:47</modification>
+            </description>
+            <loss probability="0" />
+         </generator>
+         <generator clock="|P:PU12|RI:PU2|Clk:PU2" type="peripheral" uuid="{e17cac3c-b744-46ba-939c-ee2fd1f1b759}" id="2" >
+            <process name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T6" />
+            <time period="10 ms" periodic="1" iterations="0" first="0 us" relative="false" />
+            <random param1="0 us" param2="0 us" type="None" param3="0 us" param4="0 us" />
+            <limitation minSeparationTime="0 us" />
+            <description>
+               <comment></comment>
+               <creation>2017-03-25T15:24:38</creation>
+               <modification>2017-03-31T13:18:47</modification>
+            </description>
+            <loss probability="0" />
+         </generator>
+         <generator clock="|P:PU12|RI:PU2|Clk:PU2" type="peripheral" uuid="{a5a6028b-6d8d-4d38-91c6-e3a8b9bfd05b}" id="3" >
+            <process name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T7" />
+            <time period="20 ms" periodic="1" iterations="0" first="0 us" relative="false" />
+            <random param1="0 us" param2="0 us" type="None" param3="0 us" param4="0 us" />
+            <limitation minSeparationTime="0 us" />
+            <description>
+               <comment></comment>
+               <creation>2017-03-25T15:25:02</creation>
+               <modification>2017-03-31T13:18:47</modification>
+            </description>
+            <loss probability="0" />
+         </generator>
+         <generator clock="|P:PU12|RI:PU2|Clk:PU2" type="peripheral" uuid="{f4f1cd26-400b-40b9-9c03-7127e7f6c265}" id="4" >
+            <process name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T8" />
+            <time period="10 ms" periodic="1" iterations="0" first="0 us" relative="false" />
+            <random param1="0 us" param2="0 us" type="None" param3="0 us" param4="0 us" />
+            <limitation minSeparationTime="0 us" />
+            <description>
+               <comment></comment>
+               <creation>2017-03-25T15:25:28</creation>
+               <modification>2017-03-31T13:18:47</modification>
+            </description>
+            <loss probability="0" />
+         </generator>
+      </scenario>
+      <scenario uuid="{72c572c6-f652-43f6-9387-a1e6e8eaece6}" name="S3" default="false" >
+         <description>
+            <comment></comment>
+            <creation>2017-03-26T10:05:39</creation>
+            <modification>2017-03-26T10:06:33</modification>
+         </description>
+         <description></description>
+         <generator clock="|P:PU12|RI:PU3|Clk:PU3" type="peripheral" uuid="{4c95dfc4-af08-4de3-8f96-0b16df778fa1}" id="1" >
+            <process name="|P:PU12|RI:PU3|SI:ISRScheduler|SI:DefaultScheduler|SI:T4" />
+            <time period="10 ms" periodic="1" iterations="0" first="0 us" relative="false" />
+            <random param1="0 us" param2="0 us" type="None" param3="0 us" param4="0 us" />
+            <limitation minSeparationTime="0 us" />
+            <description>
+               <comment></comment>
+               <creation>2017-03-26T10:05:45</creation>
+               <modification>2017-03-31T13:18:47</modification>
+            </description>
+            <loss probability="0" />
+         </generator>
+         <generator clock="|P:PU12|RI:PU3|Clk:PU3" type="peripheral" uuid="{3ff74144-ecbe-4933-891e-069ecdbce5df}" id="2" >
+            <process name="|P:PU12|RI:PU3|SI:ISRScheduler|SI:DefaultScheduler|SI:Tca" />
+            <time period="10 ms" periodic="1" iterations="0" first="0 us" relative="false" />
+            <random param1="0 us" param2="0 us" type="None" param3="0 us" param4="0 us" />
+            <limitation minSeparationTime="0 us" />
+            <description>
+               <comment></comment>
+               <creation>2017-03-26T10:06:16</creation>
+               <modification>2017-03-31T13:18:47</modification>
+            </description>
+            <loss probability="0" />
+         </generator>
+      </scenario>
+      <scenario uuid="{f48ae1b0-f69b-4fe0-8dc9-8cd2cd9104c7}" name="Can" default="false" >
+         <description>
+            <comment></comment>
+            <creation>2017-03-26T10:35:09</creation>
+            <modification>2017-03-26T10:36:56</modification>
+         </description>
+         <description></description>
+         <generator clock="|P:PU12|RI:PU1|Clk:PU1" type="peripheral" uuid="{110cbb59-06d9-4704-a477-fbe1a0e872b1}" id="1" >
+            <busMessage name="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:M1" />
+            <time period="10 ms" periodic="1" iterations="0" first="0 us" relative="false" />
+            <random param1="0 us" param2="0 us" type="None" param3="0 us" param4="0 us" />
+            <limitation minSeparationTime="0 us" />
+            <description>
+               <comment></comment>
+               <creation>2017-03-26T10:35:13</creation>
+               <modification>2017-03-31T13:18:47</modification>
+            </description>
+            <loss probability="0" />
+         </generator>
+         <generator clock="|P:PU12|RI:PU1|Clk:PU1" type="peripheral" uuid="{4b459fe2-4188-45ae-831f-d370476625e6}" id="2" >
+            <busMessage name="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:M3" />
+            <time period="20 ms" periodic="1" iterations="0" first="0 us" relative="false" />
+            <random param1="0 us" param2="0 us" type="None" param3="0 us" param4="0 us" />
+            <limitation minSeparationTime="0 us" />
+            <description>
+               <comment></comment>
+               <creation>2017-03-26T10:35:47</creation>
+               <modification>2017-03-31T13:18:47</modification>
+            </description>
+            <loss probability="0" />
+         </generator>
+         <generator clock="|P:PU12|RI:PU2|Clk:PU2" type="peripheral" uuid="{64c23cb0-59f3-41f4-bf15-c3f2e0291a44}" id="4" >
+            <busMessage name="|P:PU12|RI:PU2|Prp:c3|SI:CANMessages|SI:M8" />
+            <time period="10 ms" periodic="1" iterations="0" first="0 us" relative="false" />
+            <random param1="0 us" param2="0 us" type="None" param3="0 us" param4="0 us" />
+            <limitation minSeparationTime="0 us" />
+            <description>
+               <comment></comment>
+               <creation>2017-03-26T10:37:48</creation>
+               <modification>2017-03-31T13:18:47</modification>
+            </description>
+            <loss probability="0" />
+         </generator>
+         <generator clock="|P:PU12|RI:PU1|Clk:PU1" type="peripheral" uuid="{f27031b2-82a3-4b33-aff2-cc1defa50d9a}" id="3" >
+            <busMessage name="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:Ms" />
+            <time period="5 ms" periodic="1" iterations="0" first="0 us" relative="false" />
+            <random param1="0 us" param2="0 us" type="None" param3="0 us" param4="0 us" />
+            <limitation minSeparationTime="0 us" />
+            <description>
+               <comment></comment>
+               <creation>2017-03-26T10:36:15</creation>
+               <modification>2017-03-31T13:18:47</modification>
+            </description>
+            <loss probability="0" />
+         </generator>
+      </scenario>
+      <compositescenario uuid="{2b689860-6db3-46c1-bea9-72aee98902bb}" name="NewCompositeScenario" default="true" >
+         <description>
+            <comment></comment>
+            <creation>2017-03-26T12:10:12</creation>
+            <modification>2017-03-26T12:52:31</modification>
+         </description>
+         <description></description>
+         <referencedScenarios>
+            <referencedScenario name="s1" />
+            <referencedScenario name="S2" />
+            <referencedScenario name="S3" />
+            <referencedScenario name="Can" />
+         </referencedScenarios>
+      </compositescenario>
+   </stimulation>
+   <communication/>
+   <synchronization/>
+   <requirements>
+      <eventchain uuid="{3a49f9f1-3732-4efd-b633-15f50b4b75d3}" name="EventChain" >
+         <description>
+            <comment></comment>
+            <creation>2017-03-31T12:13:01</creation>
+            <modification>2017-03-31T12:13:01</modification>
+         </description>
+         <stepnames/>
+         <instancecolors>
+            <instance id="0" color="0xffc86808" />
+            <instance id="1" color="0xffaec808" />
+            <instance id="2" color="0xff35c808" />
+            <instance id="3" color="0xff08c855" />
+            <instance id="4" color="0xff08c2c8" />
+            <instance id="5" color="0xff0848c8" />
+            <instance id="6" color="0xff4108c8" />
+            <instance id="7" color="0xffbb08c8" />
+            <instance id="8" color="0xffc8085b" />
+            <instance id="9" color="0xffc82e08" />
+            <instance id="10" color="0xffc8a808" />
+            <instance id="11" color="0xff6ec808" />
+         </instancecolors>
+         <steps>
+            <step node="|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:Ts" joins="false" id="0" streamed="false" />
+         </steps>
+      </eventchain>
+      <requirement instA="1" warnmargin="0 us" instB="0" warnmarginrel="true" bound="]-infty, 5 ms]" from="-1" type="event_chain" to="-1" chain="EventChain" uuid="{306ba9df-a6e7-4339-a903-584720966f73}" name="event_chain" match="0" visible="true" enabled="true" >
+         <description>
+            <comment></comment>
+            <creation>2017-03-31T12:17:38</creation>
+            <modification>2017-03-31T13:18:47</modification>
+         </description>
+      </requirement>
+   </requirements>
+   <dependencygraph>
+      <dependency name="conn_T1_M1" >
+         <node name="|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:T1" />
+         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="dataflow" name="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:M1" orderindex="0" flowtype="event" >
+            <delay bestcase="0 us" worstcase="0 us" >
+               <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
+            </delay>
+         </activates>
+      </dependency>
+      <dependency name="conn_T3_M3" >
+         <node name="|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:T3" />
+         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="dataflow" name="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:M3" orderindex="0" flowtype="event" >
+            <delay bestcase="0 us" worstcase="0 us" >
+               <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
+            </delay>
+         </activates>
+      </dependency>
+      <dependency name="conn_Ts_Ms" >
+         <node name="|P:PU12|RI:PU1|SI:ISRScheduler|SI:DefaultScheduler|SI:Ts" />
+         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="dataflow" name="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:Ms" orderindex="0" flowtype="event" >
+            <delay bestcase="0 us" worstcase="0 us" >
+               <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
+            </delay>
+         </activates>
+      </dependency>
+      <dependency name="conn_M1_T6" >
+         <node name="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:M1" />
+         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="dataflow" name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T6" orderindex="0" flowtype="event" >
+            <delay bestcase="0 us" worstcase="0 us" >
+               <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
+            </delay>
+         </activates>
+      </dependency>
+      <dependency name="conn_M3_T7" >
+         <node name="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:M3" />
+         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="dataflow" name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T7" orderindex="0" flowtype="event" >
+            <delay bestcase="0 us" worstcase="0 us" >
+               <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
+            </delay>
+         </activates>
+      </dependency>
+      <dependency name="conn_T8_M8" >
+         <node name="|P:PU12|RI:PU2|SI:ISRScheduler|SI:DefaultScheduler|SI:T8" />
+         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="activation" name="|P:PU12|RI:PU2|Prp:c3|SI:CANMessages|SI:M8" orderindex="0" flowtype="event" >
+            <delay bestcase="0 us" worstcase="0 us" >
+               <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
+            </delay>
+         </activates>
+      </dependency>
+      <dependency name="conn_Ms_Tca" >
+         <node name="|P:PU12|RI:PU1|Prp:Cp1|SI:CANMessages|SI:Ms" />
+         <activates consumenum="1" queuelength="4" overwrite="true" recordnum="0" type="dataflow" name="|P:PU12|RI:PU3|SI:ISRScheduler|SI:DefaultScheduler|SI:Tca" orderindex="0" flowtype="event" >
+            <delay bestcase="0 us" worstcase="0 us" >
+               <simulationreplacement delaytype="None" mean="0 us" sigma="0 us" />
+            </delay>
+         </activates>
+      </dependency>
+   </dependencygraph>
+   <toolsettings>
+      <viewprofile active="true" name="default" >
+         <setting type="EnvironmentControl" >
+            <visible value="false" />
+         </setting>
+         <setting type="EventChainVisibility" >
+            <visible value="false" />
+         </setting>
+         <setting type="BoxPlotView" >
+            <visible value="false" />
+            <sortby value="resource, process" />
+         </setting>
+         <setting type="FunctionNestingView" >
+            <visible value="true" />
+            <autoDiagramHeight value="true" />
+            <diagram height="77" showdetails="false" name="T3:PU1" visible="true" />
+            <diagram height="77" showdetails="false" name="T2:PU1" visible="true" />
+            <diagram height="77" showdetails="false" name="T1:PU1" visible="true" />
+            <diagram height="77" showdetails="false" name="Ts:PU1" visible="true" />
+            <diagram height="77" showdetails="false" name="T7:PU2" visible="true" />
+            <diagram height="77" showdetails="false" name="T5:PU2" visible="true" />
+            <diagram height="77" showdetails="false" name="T6:PU2" visible="true" />
+            <diagram height="77" showdetails="false" name="T8:PU2" visible="true" />
+            <diagram height="77" showdetails="false" name="S1:PU3" visible="true" />
+            <diagram height="77" showdetails="false" name="S4:PU3" visible="true" />
+            <diagram height="77" showdetails="false" name="T4:PU3" visible="true" />
+            <diagram height="77" showdetails="false" name="Tca:PU3" visible="true" />
+         </setting>
+         <setting type="TraceView" >
+            <visible value="true" />
+            <window width="1915" x="0" y="-84" height="1041" fullscreen="0" maximized="0" />
+            <time value="112.875 ms" />
+         </setting>
+         <setting type="ProcessStateView" >
+            <visible value="true" />
+            <diagram height="71" showdetails="false" name="Load:PU1:PU1" visible="false" >
+               <granularity value="1.25 ms" />
+               <smoothing value="4" />
+            </diagram>
+            <diagram height="71" showdetails="false" name="Load:PU2:PU2" visible="false" >
+               <granularity value="1.25 ms" />
+               <smoothing value="4" />
+            </diagram>
+            <diagram height="71" showdetails="false" name="Load:PU3:PU3" visible="false" >
+               <granularity value="1.25 ms" />
+               <smoothing value="4" />
+            </diagram>
+            <autoDiagramHeight value="true" />
+            <diagram height="71" showdetails="false" name="T3:PU1" visible="true" />
+            <diagram height="71" showdetails="false" name="T2:PU1" visible="true" />
+            <diagram height="71" showdetails="false" name="T1:PU1" visible="true" />
+            <diagram height="71" showdetails="false" name="Ts:PU1" visible="true" />
+            <diagram height="71" showdetails="false" name="T7:PU2" visible="true" />
+            <diagram height="71" showdetails="false" name="T5:PU2" visible="true" />
+            <diagram height="71" showdetails="false" name="T6:PU2" visible="true" />
+            <diagram height="71" showdetails="false" name="T8:PU2" visible="true" />
+            <diagram height="71" showdetails="false" name="S1:PU3" visible="true" />
+            <diagram height="71" showdetails="false" name="Tca:PU3" visible="true" />
+            <diagram height="71" showdetails="false" name="T4:PU3" visible="true" />
+            <diagram height="71" showdetails="false" name="S4:PU3" visible="true" />
+            <diagram height="71" showdetails="false" name="CAN:c1" visible="true" />
+            <scaling value="3000" />
+            <time value="0 us" />
+            <window width="3042" x="119" y="-84" height="1055" fullscreen="0" maximized="0" />
+         </setting>
+         <viewsmaximized value="false" />
+      </viewprofile>
+      <setting type="SimulatorWindow" >
+         <window width="1915" x="-64" y="83" height="1051" fullscreen="0" maximized="1" />
+         <viewsmaximized value="true" />
+      </setting>
+      <setting type="EventSpectrumPlot" >
+         <window width="1000" x="40" y="40" height="800" fullscreen="0" maximized="0" />
+      </setting>
+      <setting type="ResponseTimeCompositionWindow" >
+         <window width="1920" x="-8" y="-8" height="1057" fullscreen="0" maximized="0" />
+      </setting>
+   </toolsettings>
+   <report>
+      <types csv="true" ipr="false" cvr="false" html="true" />
+      <flags cpu="true" flexraymessage="true" requirementtime="false" requirement="true" function="true" transfercounter="true" functionhistogram="true" ecreqnettime="false" process="true" waitendsexecution="false" calltree="false" functiontime="false" canmessage="true" />
+      <timerange end="inf" start="0 us" enabled="false" />
+      <splitevent name="INCHRON_REPORT_SPLIT" enabled="false" />
+      <functionalcorrectnessevent name="INCHRON_FUNCTIONAL_CORRECT" enabled="false" />
+      <name></name>
+      <dir>:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\:\Users\s168877\report</dir>
+      <template>builtin</template>
+      <maxcalldepth>100</maxcalldepth>
+      <hiddencpus></hiddencpus>
+      <hiddenprocesses></hiddenprocesses>
+   </report>
+   <optsettings simtime="500 ms" evaluation="chronVAL" >
+      <algorithm name="chronOPT" />
+      <parameter key="lengthTabuList" value="25" />
+      <parameter key="maxNeighborhood" value="5" />
+      <objective target="|P:PU12" priority="0" type="1" />
+      <objective target="|P:PU12" priority="1" type="3" />
+      <objective target="|P:PU12" priority="2" type="4" />
+      <objective target="|P:PU12|Re:All Requirements|Re:event_chain" priority="3" type="0" />
+      <freedom isactive="true" target="|P:PU12" type="0" />
+      <freedom isactive="true" target="|P:PU12" type="1" />
+      <haltconditions haltnoimprovement="50" rankbelow="1" iterations="200" haltnoimprovefor="true" haltafter="true" haltrankbelow="true" />
+   </optsettings>
+</cs2:chronsimproject>

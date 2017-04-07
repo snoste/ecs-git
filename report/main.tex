@@ -1,0 +1,44 @@
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amssymb}
+\usepackage{biblatex}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,
+	showstringspaces=false,
+	commentstyle=\color{red},
+	keywordstyle=\color{blue}
+}
+
+\usepackage{pgfplots}
+\usepackage[colorlinks=true,allcolors=black]{hyperref}
+%\usepackage[backend=biber, bibencoding=utf8, style=ieee]{biblatex}
+
+\addbibresource{references.bib}
+
+\begin{document}
+\title{ {\fontsize{16}{1} \selectfont Control over CAN and Flexray} {\\ \fontsize{13}{1} \selectfont \textbf{Embedded Control Systems}} }
+\author{Sai Krishna Kalluri \& Snorri Stefansson }
+
+\maketitle
+
+\tableofcontents
+
+
+%\input{intro}
+
+\input{part1}
+\input{part2}
+\input{part3}
+
+
+
+\printbibliography
+
+\end{document}
+

@@ -1,0 +1,33 @@
+\begin{table}[htbp!]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+   & Offset(ms) & Period(ms) & ExecutionTime(ms) \\ \hline
+   $ECU_2$ & & & \\ \hline
+   $T_1$ & 0          & 8          & 0.5               \\ \hline
+   $T_c$ & 2          & 4          & 0.5               \\ \hline
+   $ECU_1$ & & & \\ \hline
+	$T_2 $& 0          & 8          & 0.5               \\ \hline
+	$T_s$ & 1          & 4          & 0.1               \\ \hline
+	$T_a$ & 3.5        & 4          & 0.1               \\ \hline
+
+\end{tabular}
+\label{tab:flextsk}
+\caption{Design of Tasks showing offsets, period and execution time}
+\end{table}
+
+
+\begin{table}[htbp!]
+	\centering
+	
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		& Slot & Base & Repetition \\ \hline
+		$m_1$  & 3    & 0    & 2          \\ \hline
+		$m_{12}$ & 5    & 0    & 2          \\ \hline
+		$m_x$  & 4    & 0    & 1          \\ \hline
+		$m_u$  & 7    & 0    & 1          \\ \hline
+	\end{tabular}
+	\label{tab:flexmsg}
+	\caption{Design of messages showing which slot in the FlexRay it starts, which cycle is the base and then how frequently}
+\end{table}
