@@ -1,14 +1,15 @@
 
-
-hc=0.01;
- delay=0.0081;
- %desired_poles=[0.8 0.8 0.05 0.00];
- %desired_poles=[x(1) x(2) x(3) x(4)];
+% Modified poles, sensor to actuator delay and sampling period
+hc=0.0100;
+delay=0.0081;
 
 desired_poles=[0.0231    0.8056    0.8283    0.0284]
+
+%desired_poles=[0.8 0.8 0.05 0.00];
+%desired_poles=[x(1) x(2) x(3) x(4)];
 % error messages
 if (delay >= hc)
-    error('ERROR: delay >= hc')
+error('ERROR: delay >= hc')
 end
 
 J = 3.2284E-6;
@@ -37,9 +38,9 @@ sys_d = c2d(sys_ss, hc, 'zoh');
 % Controllability
 co = ctrb(sys_d);
 Controllability = rank(co);
-if (Controllability  ~= dim) 
+if (Controllability  ~= dim)
     warning('WARNING: System is uncontrollable!')
-end;    
+end;
 
 % Discrete matrices: for control design
 Ad_controller_design = sys_d.a;
@@ -50,8 +51,8 @@ phi=Ad_controller_design;
 Gamma=Bd_controller_design;
 
 % Augmented state variables
-sysd_b0 = c2d(sys_ss, hc-delay); 
-sysd_b1 = c2d(sys_ss, hc); 
+sysd_b0 = c2d(sys_ss, hc-delay);
+sysd_b1 = c2d(sys_ss, hc);
 B_0 = sysd_b0.b;
 B_temp = sysd_b1.b;
 B_1 = B_temp - B_0;
@@ -72,15 +73,15 @@ Daug_controller = single(Daug_controller);
 %% CONTROLLER DESIGN
 % FEEDBACK GAIN
 desired_poles = desired_poles';
-K = -acker(Aaug_controller, Baug_controller, desired_poles); 
+K = -acker(Aaug_controller, Baug_controller, desired_poles);
 %K = [-3 -0.5 -0.005 -0.003 -0.5]; % TEMPLATE EXAMPLE: REMOVE THIS
 
 % checking closed-loop poles with feedback controller
 Acl = (Aaug_controller + Baug_controller*K);
 poles_single=eigs(Acl);
-if abs(eigs(Acl)) >= 1 
+if abs(eigs(Acl)) >= 1
     warning('WARNING: Closed-loop poles are out of unit circle!')
-end;    
+end;
 
 % FEEDFORWARD GAIN
 F = 1 / ( Caug_controller * ( (eye(dim+1) - Aaug_controller - (Baug_controller*K))^-1 ) * Baug_controller );
@@ -94,26 +95,25 @@ time(2) = T_period; time(1) = 0;
 i = 2;
 r = 3.1416;
 for i=2:1/T_period
-    
+
     u = K*[x1(i);x2(i);x3(i);input(i-1)] + r*F;
-   
+
     xkp1 = phi*[x1(i);x2(i);x3(i)]+ Gamma1*input(i-1) + Gamma0*u;
     x1(i+1) = xkp1(1);
     x2(i+1) = xkp1(2);
     x3(i+1) = xkp1(3);
-    input(i) = u;    
-    time(i+1) = time(i) + T_period;   
+    input(i) = u;
+    time(i+1) = time(i) + T_period;
 end
 plot(time, x1, 'r');
 hold on;
-%  
+%
  plot(time(1:end-1), input, 'r');
 mi=max(abs(input));
 st=stepinfo(x1,time,r);
 st=st.SettlingTime;
 if(isnan(st))
-   st=100; 
+   st=100;
 end
 y(1)=mi;
 y(2)=st;
-        

@@ -1,0 +1,161 @@
+\section{System Model Derivation and Control Parameter Design}
+%System	model	derivation	and	controller	parameter	design
+The objectives for the controller is to properly control the given system with a set of design parameters. These parameters, shown in Table \ref{tab:design}, have to be design and put into perspective with our system, which role they play and the best way to derive them adequately.
+
+There are namely a number of steps taken until all parameters can be considered to satisfy the performance constraints of the controller. These basic steps can be seen in the following list.
+
+\begin{enumerate}
+	\item Step 1: Derive the system model. Determine the A, B and C matrices in relation to all constants by hand calculations. Inserting this into Matlab. These calculations can be seen in Section \ref{sec:controllerstructure} in full detail.
+	\item Step 2: Forming sensible values for C,P TDM\_TABLE\_Size and DELAY. The relationship between these values was inspected in full detail and is discussed in Section \ref{sec:platform}.
+	\item Step 3: Choosing desired poles according to the given requirements. Verifying the controllability of the system for the chosen values. Computing the controller Feed-Forward and Feed-Back gains $F$ and $K$. Inserting these calculations into MATLAB. More about this step can be found in Section \ref{sec:platform}
+	\item Step 4: Determine the locations of Ts, Tc and Ta in the TDM table.
+	\item Step 5: Determining the sensor to actuator delay in relation to the chosen design parameters, especially P, C and TDM table size is calculated and discussed in Section \ref{sec:stad}. 
+	\item Step 6: Simulation for all determined parameters is run and checked if they meet all performance constraints. The check on the performance constraints is also performed during Step 2 by running a script for all parameters and checking every time. This is discussed in more detail in Section \ref{sec:platform}.
+	\item Step 7: Finally modifying the Sconfig.c file in the platform to match the design.
+	\item Step 8: Generate both actuator and sensor output files from the platform to feed to Matlab to compare the results with ones from Simulink.
+\end{enumerate}
+
+
+\begin{table}[h!]
+	\centering
+	\caption{Design parameters and deliverables for the model. The poles are also something that has to be design or chosen but that will be discussed in Section \ref{sec:controllerstructure}}
+	\begin{tabular}{lll}
+		\toprule
+		Design Parameter & Symbol/Referenced as &Unit\\
+		\midrule
+		CoMik microkernel slot size& C & Clock Cycles \\
+		Partition slot size& P & Clock Cycles\\
+		TDM table size& TDM\_TABLE\_SIZE & Natural Number larger than 2\\
+		Partition slots allocation	& for Ts, Tc, and Ta & Location in TDM table \\
+		Sensor-to-actuator	delay& DELAY & Clock Cycles	\\
+		Feedback gain& K & 4x4 matrix \\
+		Feedforward gain& F & 4x1 matrix \\
+		\midrule		
+	\end{tabular}
+	\label{tab:design}
+\end{table}
+
+\begin{table}[htbp]
+	\centering
+	\caption{Constants referenced to in calculations}
+	\begin{tabular}{llll}
+		\toprule
+		Symbol & Description & Value & Unit\\ 
+		\midrule
+		$\theta$ & Masses position  & -&rad \\ 
+		$i_m$ & Motor current  & - &A \\ 
+		J$_1 = J_2$ & Inertia  & $3.75\cdot10^{-6}$&$Kgm^2$  \\ 
+		b & Friction  coefficient   &$ 1\cdot10^{-5} $&Nms/rad\\ 
+		k & Torsional spring  & 0.2656 &Nm/rad\\
+		d & Torsional damping  & $3.125\cdot10^{-5}$&Nms/rad \\ 
+		$K_m$ & Motor constant  & $4.4\cdot10^{-2}$&Nm/A  \\ 
+		\midrule
+	\end{tabular}
+	\label{tab:constants}
+\end{table}
+
+ 
+
+\subsection{Controller Structure}
+ \label{sec:controllerstructure}
+The system can be described with the second order differential equation shown in Equation \ref{eq:1} and \ref{eq:2} which will be solved considering Equation \ref{eq:3}. From these equations the Feedback- and Feedforward gain can be determined in relations to the constants in the system. All of these components are relative to time but this will not be denoted here to enforce clarity during calculations.
+
+\begin{equation}
+J_1 \; \ddot{\theta}_1 = K_m \; i_m - k(\theta_1-\theta_2) - d(\dot{\theta}_1-\dot{\theta}_2) - b(\dot{\theta}_1-\dot{\theta}_2)
+\label{eq:1}
+\end{equation}
+
+\begin{equation}
+J_2 \; \ddot{\theta}_2 = -k(\theta_2-\theta_1) - d(\dot{\theta}_2-\dot{\theta}_1) - b(\dot{\theta}_2-\dot{\theta}_1)
+\label{eq:2}
+\vspace{.2em}
+\end{equation}
+
+The sensor values can be interpreted as shown in Equation \ref{eq:3} for better notation as well as showing the first derivative of them which will be used to derive the final equation in Equation \ref{eq:5}.
+
+\begin{equation}
+\label{eq:3}
+\text{\textit{\textbf{x}}} =
+\begin{bmatrix}
+x_1 \\
+x_2  \\
+x_3  \\
+x_4  
+\end{bmatrix}
+=
+\begin{bmatrix}
+\theta_1\\
+ \theta_2\\
+\dot{\theta}_1\\
+\dot{\theta}_2
+\end{bmatrix}
+=
+\begin{bmatrix}
+\theta_1\\
+\theta_2\\
+\omega_1\\
+\ \omega_2
+\end{bmatrix}
+\quad\text{ and }\quad
+\dot{\text{\textit{\textbf{x}}}} =
+\begin{bmatrix}
+\dot{\theta}_1\\
+\dot{\theta}_2\\
+\ddot{\theta}_1\\
+\ddot{\theta}_2
+\end{bmatrix}
+\vspace{.2em}
+\end{equation}
+
+Now Equations \ref{eq:1} and \ref{eq:2} can be translated into these terms, shown in Equation \ref{eq:extra1} and \ref{eq:extra2}
+
+\begin{equation}
+ \ddot{\theta}_1 \; = \dot{x}_3 = \dfrac{K_m \; i_m}{J_1} + x_1 \frac{-k}{J_1} +  x_2 \frac{k}{J_1} + x_3 \frac{-(d+b)}{J_1} + x_4 \frac{d+b}{J_1}
+\label{eq:extra1}
+\end{equation}
+
+\begin{equation}
+ \ddot{\theta}_2 \; = \dot{x}_4 = x_1 \frac{k}{J_2} +  x_2 \frac{-k}{J_2} + x_3 \frac{d+b}{J_2} + x_4 \frac{-(d+b)}{J_2}
+\label{eq:extra2}
+\vspace{.2em}
+\end{equation}
+
+\begin{equation}
+\dot{\text{\textit{\textbf{x}}}}  = {\text{\textbf{A}}}\text{\textit{\textbf{x}}}  +  {\text{\textbf{B}}}\text{\textit{{u}}}  \text{ and } \text{\textit{{y}}}  = {\text{\textbf{C}}}\text{\textit{\textbf{x}}}  \qquad \text{ where } \quad \text{input: \textit{{u}}}=i_m \quad\text{ , output: \textit{{y}}}=\theta_1
+\label{eq:4}
+\end{equation}
+
+Equation \ref{eq:4} and \ref{eq:5} show the same equation. But the matrices can be derived by combing the equations above and resulting in Equation \ref{eq:5}. This can then be used to calculate the K and F values mentioned in Table \ref{tab:design}.
+
+\begin{equation}
+\dot{\text{\textit{\textbf{x}}}}  = \begin{bmatrix}
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1\\
+\frac{-k}{J_1}&\frac{k}{J_1} & \frac{-(d+b)}{J_1}&\frac{d+b}{J_1} \\
+ \frac{k}{J_2}& \frac{-k}{J_2} & \frac{d+b}{J_2}& \frac{-(d+b)}{J_2}
+\end{bmatrix}
+\begin{bmatrix}
+\theta_1\\
+\theta_2\\
+\omega_1\\
+\omega_2\\
+\end{bmatrix}
++
+\begin{bmatrix}
+0\\
+0\\
+\dfrac{K_m}{J_1}\\
+0\\
+\end{bmatrix}\text{\textit{{u}}}
+\quad \text{ and } \quad
+\text{\textit{{y}}}=\begin{bmatrix}
+1&0&0&0
+\end{bmatrix}
+\begin{bmatrix}
+\theta_1\\
+\theta_2\\
+\omega_1\\
+\omega_2\\
+\end{bmatrix}
+\label{eq:5}
+\end{equation}

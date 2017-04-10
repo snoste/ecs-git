@@ -1,0 +1,16 @@
+C, P, Boolean, Comment
+16000, 0.9, 1, very good
+15000, 0.9, 1, good but most difference on Omega 1 and 2
+14000, 0.9, 1, good same as last comment
+13000, 0.9, 1, good same as last comment
+9000, 0.9, 1, ok but current getting high as well as omegas
+7000, 0.9, 1, ok same as last comment
+
+16000, 0.8, 1, ok but bad current and omega ratings
+15000, 0.8, 0, bad and current out of bounds over 0.6 A
+-, 0.8, 0, bad and current and omega out of bounds over 0.6 A
+7000, 0.8, 0, bad and current and omega out of bounds over 0.6 A
+
+Everything with poles lower than 0.8 does not cut it where omegas and current are out of bounds. We should purse somthing like this C=16000, poles=0.9 and we used P=C*Constant (Constant was sth like 0.5 right Sai??? :))
+
+
