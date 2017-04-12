@@ -4,6 +4,7 @@
 *.out
 *.pdf
 *.gz
+
 *.toc
 
 #Ignore thumbnails created by Windows
